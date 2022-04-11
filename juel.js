@@ -22746,7 +22746,7 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                         document.head.append(script);
                     }
                     console.log(script);
-                    script.addEventListener('load', ()=>{
+                    script.onload = ()=>{
                         console.log("Marked " + ('marked' in window));
                         if ('marked' in window) {
                             this.content = marked.parse(data);
@@ -22754,7 +22754,7 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                             if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
                             , 400);
                         }
-                    });
+                    };
                 }).catch((err)=>{
                     console.log(err);
                 });
