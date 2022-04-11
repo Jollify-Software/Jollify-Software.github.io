@@ -22744,9 +22744,16 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                         script.id = "markdown";
                         script.src = JuelEmbed_1.UrlMarkdown;
                         document.head.append(script);
-                    }
-                    console.log(script);
-                    script.onload = ()=>{
+                        script.onload = ()=>{
+                            console.log("Marked " + ('marked' in window));
+                            if ('marked' in window) {
+                                this.content = marked.parse(data);
+                                this.requestUpdate();
+                                if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
+                                , 400);
+                            }
+                        };
+                    } else setTimeout(()=>{
                         console.log("Marked " + ('marked' in window));
                         if ('marked' in window) {
                             this.content = marked.parse(data);
@@ -22754,7 +22761,7 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                             if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
                             , 400);
                         }
-                    };
+                    }, 400);
                 }).catch((err)=>{
                     console.log(err);
                 });
