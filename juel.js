@@ -22733,7 +22733,7 @@ var $038e193f9971cdd6$var$__decorate = undefined && undefined.__decorate || func
 let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
     var JuelEmbed_1;
     let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = JuelEmbed_1 = class $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 extends $69a66af8deb391ea$export$3f2f9f5909897157 {
-        updated(_changedProperties) {
+        firstUpdated(_changedProperties) {
             if (this.url) fetch(this.url).then((response)=>{
                 var contentType = response.headers.get('content-type');
                 if (this.type == "markdown" || /markdown/.test(contentType)) response.text().then((data)=>{
