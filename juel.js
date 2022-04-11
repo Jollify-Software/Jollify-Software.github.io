@@ -22745,6 +22745,7 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                         script.src = JuelEmbed_1.UrlMarkdown;
                         document.head.append(script);
                     }
+                    console.log(script);
                     script.addEventListener('load', ()=>{
                         console.log("Marked " + ('marked' in window));
                         if ('marked' in window) {
@@ -22754,6 +22755,8 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                             , 400);
                         }
                     });
+                }).catch((err)=>{
+                    console.log(err);
                 });
             });
         }
