@@ -22737,23 +22737,23 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
             if (this.url) fetch(this.url).then((response)=>{
                 var contentType = response.headers.get('content-type');
                 if (this.type == "markdown" || /markdown/.test(contentType)) response.text().then((data)=>{
-                    if (!document.head.querySelector('#markdown')) {
+                    let script;
+                    script = document.head.querySelector('#markdown');
+                    if (!script) {
                         let script = document.createElement('script');
                         script.id = "markdown";
                         script.src = JuelEmbed_1.UrlMarkdown;
-                        script.onload = ()=>{
-                            if ('marked' in window) {
-                                this.content = marked.parse(data);
-                                this.requestUpdate();
-                            }
-                        };
                         document.head.append(script);
-                    } else if ('marked' in window) {
-                        this.content = marked.parse(data);
-                        this.requestUpdate();
                     }
-                    if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
-                    , 400);
+                    script.addEventListener('load', ()=>{
+                        console.log("Marked " + ('marked' in window));
+                        if ('marked' in window) {
+                            this.content = marked.parse(data);
+                            this.requestUpdate();
+                            if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
+                            , 400);
+                        }
+                    });
                 });
             });
         }
