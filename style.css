@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+#container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#container .project {
+    background-color: darkcyan;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-top: ivory 4px solid;
+}
+#splash {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: initial;
+}
+#logo {
+    margin-top: -5%;
+    background-image: url(img/logo-txt-lg.png);
+    width: 711px;
+    height: 259px;
+}
+#tagline {
+    font-size: xx-large;
+    font-weight: bold;
+}
+#bkvid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+#donate {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#contact li {
+    height: 34px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 34px;
+}
+#contact .email {
+    background-image: url(img/email.png);
+}
+#contact .twitter {
+    background-image: url(img/twitter.png);
+}
+#copyright {
+    align-self: center;
+    color: initial;
+}
+
+
+h1 {
+    margin-bottom: 0;
+}
+p {
+    line-height: 1.5;
+}
+ul {
+    list-style: none;
+}
+a {
+    color: white;
+}
+.btn {
+    text-decoration: none;
+    background-color: #9fd067;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 0;
+    overflow: visible;
+    padding: 10px 20px 10px 20px;
+    margin: 10px 20px 10px 20px;
+    position: relative;
+    margin-top: 2rem;
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: lighter;
+}

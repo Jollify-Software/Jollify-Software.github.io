@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Jollify</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.3.1/styles/atom-one-dark.css">
+    <script src="juel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="splash">
+            <div id="logo"></div>
+            <h1>Open Source Software</h1>
+            <div id="btn-container">
+                <a class="btn" href="#juel">Juel</a>
+                <!--<a class="btn" href="#">Shoppe</a>-->
+                <a class="btn" href="#garden">Juel Garden</a>
+            </div>
+            <video id="bkvid" autoplay muted loop>
+                <source />
+            </video>
+            <div id="tagline">Create your own <a href="https://youtu.be/Jg3sEE18WsE?rel=0" target="_blank">Ode to
+                    Joy.</a></div>
+            <div id="donate">
+                <script type='text/javascript' src='https://ko-fi.com/widgets/widget_2.js'></script>
+                <script type='text/javascript'>
+                    kofiwidget2.init('Support Me on Ko-fi', '#29abe0', 'W7W21LVUN');
+                    kofiwidget2.draw();
+                </script>
+            </div>
+        </div>
+        <div id="juel" class="project">
+            <div class="project-inner">
+            <juel-embed type="markdown" url="https://raw.githubusercontent.com/Jollify-Software/juel/master/README.md"></juel-embed>
+        </div>
+        </div>
+        <div id="garden" class="project">
+            <div class="project-inner">
+            <juel-embed type="markdown" url="https://raw.githubusercontent.com/Jollify-Software/juel-garden/master/README.md"></juel-embed>
+        </div>
+        </div>
+            <script src="script.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+
+</html>
