@@ -22740,7 +22740,7 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                     let script;
                     script = document.head.querySelector('#markdown');
                     if (!script) {
-                        let script = document.createElement('script');
+                        script = document.createElement('script');
                         script.id = "markdown";
                         script.src = JuelEmbed_1.UrlMarkdown;
                         document.head.append(script);
