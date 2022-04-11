@@ -22748,9 +22748,9 @@ let $038e193f9971cdd6$export$6fdd3e3b8bc0fa25 = (()=>{
                             }
                         };
                         document.head.append(script);
-                        if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
-                        , 200);
                     }
+                    if ('hljs' in window) setTimeout(()=>hljs.highlightAll()
+                    , 200);
                 });
             });
         }
