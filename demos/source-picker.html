@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <script src="juel.js"></script>
+</head>
+
+<body>
+    <h2>Image</h2>
+    <juel-source-picker id="pick1" url="https://jolify-app.azurewebsites.net/test" get="get" list="list" append="true"
+        accept="image/*" dispose="dispose"></juel-source-picker>
+    <h2>Audio</h2>
+    <juel-source-picker id="pick2" url="https://jolify-app.azurewebsites.net/test" get="get" list="list" append="true" type="audio"
+        accept="audio/*" dispose="dispose"></juel-source-picker>
+    <h2>Video</h2>
+    <juel-source-picker id="pick3" url="https://jolify-app.azurewebsites.net/test" get="get" list="list" append="true" type="video"
+        accept="video/*" dispose="dispose"></juel-source-picker>
+</body>
+<script>
+    let pick = document.querySelectorAll("juel-source-picker");
+    for (let el of pick) {
+        el.srcResolver = (obj) => {
+            return new Promise((resolve, reject) => {
+                let id = Array.isArray(obj) ? obj[0]['ResourceId'] : obj['ResourceId'];
+                resolve(id);
+            })
+        }
+        el.setItemTemplate((obj) => {
+            return new Promise((resolve, reject) => {
+                console.log(obj);
+                resolve(`<h4>${obj['Name']}</h4>`);
+            })
+        });
+    }
+</script>
+
+</html>
