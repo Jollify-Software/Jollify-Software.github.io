@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script src="juel.js"></script>
+
+    <style>
+        .container {
+            width: 100%;
+            height: 400px;
+            margin: 20% auto;
+        }
+    </style>
+</head>
+
+<body>
+        <juel-emoji-picker url="https://jollify.azurewebsites.net/emoji">
+        </juel-emoji-picker>
+
+        <h2>Dialog</h2>
+
+        <button id="dialog-1-btn">Show Emoji Picker</button>
+
+        <juel-dialog-manager>
+            <div id="dialog-1" data-title="Emoji Picker" data-group="a" data-trigger="#dialog-1-btn">
+                <juel-emoji-picker url="https://jollify.azurewebsites.net/emoji">
+                </juel-emoji-picker>
+            </div>
+        </juel-dialog-manager>
+
+        <script>
+            var els = document.querySelectorAl("juel-emoji-picker");
+            for (let el of els) {
+                el.addEventListener("emoji-selected", function(evt) {
+                    alert(evt.detail.value);
+                })
+            }
+        </script>
+</body>
+
+</html>

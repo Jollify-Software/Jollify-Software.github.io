@@ -1,0 +1,28 @@
+<html>
+
+<head>
+        <script src="juel.js"></script>
+</head>
+
+<body>
+        <juel-tree id="tree"></juel-tree>
+
+        <script>
+            document.getElementById("tree").object = {
+                "Animals": [
+                    "Monkey",
+                    "Zebra",
+                    "Tiger",
+                    {
+                        "Fish": [
+                            "Cod",
+                            "Salmon",
+                            "Tuna"
+                        ]
+                    }
+                ]
+            }
+        </script>
+</body>
+
+</html>
