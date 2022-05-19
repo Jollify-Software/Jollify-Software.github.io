@@ -18,7 +18,7 @@
             <div data-title="Example" data-closable="false">
                 <strong data-tab>Hello</strong>
                 <h1>Component 1</h1>
-                <button onclick="count()">Count</button>
+                <button onclick="counter()">Count</button>
             </div>
             <div data-title="Example 2">
                 <h1>Component 2</h1>
@@ -35,7 +35,7 @@
         var win = null;
         count = 0;
 
-        function count() {
+        function counter() {
             count++;
             mdi.layout.eventHub.emit('count', count);
         }
