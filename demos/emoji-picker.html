@@ -28,7 +28,7 @@
         </juel-dialog-manager>
 
         <script>
-            var els = document.querySelectorAl("juel-emoji-picker");
+            var els = document.querySelectorAll("juel-emoji-picker");
             for (let el of els) {
                 el.addEventListener("emoji-selected", function(evt) {
                     alert(evt.detail.value);
