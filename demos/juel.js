@@ -77397,6 +77397,7 @@ function $08ee6709710a83c7$export$cd84ade9e4ea1389(cm, data) {
     var cursor = doc.getCursor(); // gets the line number in the cursor position
     var line = doc.getLine(cursor.line); // get the line contents
     var pos = (/*@__PURE__*/$parcel$interopDefault($fQ7hD)).Pos(cursor.line);
+    console.log(pos);
     if (line.length === 0) // check if the line is empty
     // add the data
     doc.replaceRange(data, pos);
@@ -77438,6 +77439,7 @@ class $45ffb0fabe2604b3$export$ab76cb380b38ca8a {
             let emoji = this.editor.querySelector(`#${this.editor.emoji}`);
             if (emoji) {
                 emoji.addEventListener($5f58fa6617519f2d$export$aff6211ca732022e.EmojiSelected, (e)=>{
+                    console.log(e);
                     $08ee6709710a83c7$export$cd84ade9e4ea1389(this.markdownEditor.codemirror, e.detail.value);
                 });
                 let index = toolbar.indexOf("|");
