@@ -5,24 +5,61 @@
 </head>
 
 <body>
-        <juel-tree id="tree"></juel-tree>
+    <juel-tree id="tree"></juel-tree>
 
-        <script>
-            document.getElementById("tree").object = {
-                "Animals": [
-                    "Monkey",
-                    "Zebra",
-                    "Tiger",
+    <juel-tree id="obj-tree"></juel-tree>
+
+    <script>
+        document.getElementById("tree").data = {
+            "Animals": [
+                "Monkey",
+                "Zebra",
+                "Tiger",
+                {
+                    "Fish": [
+                        "Cod",
+                        "Salmon",
+                        "Tuna"
+                    ]
+                }
+            ],
+            "Cars": [
+                "Farari",
+                "Dodge Viper",
+                {
+                    "Ford": [
+                        "Escort",
+                        "Fiesta"
+                    ]
+                }
+            ]
+        }
+
+        document.getElementById("obj-tree").data = [
+            {
+                name: "Smileys 🙂",
+                items: [
                     {
-                        "Fish": [
-                            "Cod",
-                            "Salmon",
-                            "Tuna"
-                        ]
+                        name: "Ok Hand 👌"
+                    },
+                    {
+                        name: "Smiling eyes😊"
+                    }
+                ]
+            },
+            {
+                name: "Animals 🦊",
+                items: [
+                    {
+                        name: "Horse 🐎"
+                    },
+                    {
+                        name: "Monkey 🐒"
                     }
                 ]
             }
-        </script>
+        ];     
+    </script>
 </body>
 
 </html>
