@@ -77436,7 +77436,7 @@ class $45ffb0fabe2604b3$export$ab76cb380b38ca8a {
             "guide"
         ];
         if (this.editor.emoji) {
-            let emoji = this.editor.querySelector(`#${this.editor.emoji}`);
+            let emoji = this.editor.shadowRoot.querySelector(`#${this.editor.emoji}`);
             if (emoji) {
                 emoji.addEventListener($5f58fa6617519f2d$export$aff6211ca732022e.EmojiSelected, (e)=>{
                     console.log(e);
