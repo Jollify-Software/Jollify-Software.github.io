@@ -77397,7 +77397,6 @@ function $08ee6709710a83c7$export$cd84ade9e4ea1389(cm, data) {
     var cursor = doc.getCursor(); // gets the line number in the cursor position
     var line = doc.getLine(cursor.line); // get the line contents
     var pos = (/*@__PURE__*/$parcel$interopDefault($fQ7hD)).Pos(cursor.line);
-    console.log(pos);
     if (line.length === 0) // check if the line is empty
     // add the data
     doc.replaceRange(data, pos);
@@ -77438,8 +77437,7 @@ class $45ffb0fabe2604b3$export$ab76cb380b38ca8a {
         if (this.editor.emoji) {
             let emoji = this.editor.querySelector(`#${this.editor.emoji}`);
             if (emoji) {
-                emoji.addEventListener($5f58fa6617519f2d$export$aff6211ca732022e.EmojiSelected, (e)=>{
-                    console.log(e);
+                emoji.firstChild.addEventListener($5f58fa6617519f2d$export$aff6211ca732022e.EmojiSelected, (e)=>{
                     $08ee6709710a83c7$export$cd84ade9e4ea1389(this.markdownEditor.codemirror, e.detail.value);
                 });
                 let index = toolbar.indexOf("|");
@@ -77588,8 +77586,8 @@ let $bf96a9a54415ebb6$export$cbe39309dca83f17 = _class1 = _dec4((_class1 = (_cla
     render() {
         return $31a9a171bf15485f$export$c0bb0b647f701bb5`<style>${$ca57216a6d082b28$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($62b5edc73d7d435e$exports)))}</style><textarea></textarea>${this.emoji ? $31a9a171bf15485f$export$c0bb0b647f701bb5`
         <juel-dialog-manager>
-            <div data-title="${this.emojiTitle}">
-                <juel-emoji-picker id="${this.emoji}" url="${$26e09bb2faff85a8$export$f68dd208b5df064d(this.emojiUri)}">
+            <div id="${this.emoji}" data-title="${this.emojiTitle}">
+                <juel-emoji-picker url="${$26e09bb2faff85a8$export$f68dd208b5df064d(this.emojiUri)}">
                 </juel-emoji-picker>
             </div>
         </juel-dialog-manager>` : ``}`;
