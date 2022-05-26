@@ -77437,7 +77437,7 @@ class $45ffb0fabe2604b3$export$ab76cb380b38ca8a {
         if (this.editor.emoji) {
             let emoji = this.editor.querySelector(`#${this.editor.emoji}`);
             if (emoji) {
-                emoji.firstChild.addEventListener($5f58fa6617519f2d$export$aff6211ca732022e.EmojiSelected, (e)=>{
+                emoji.firstElementChild.addEventListener($5f58fa6617519f2d$export$aff6211ca732022e.EmojiSelected, (e)=>{
                     $08ee6709710a83c7$export$cd84ade9e4ea1389(this.markdownEditor.codemirror, e.detail.value);
                 });
                 let index = toolbar.indexOf("|");
