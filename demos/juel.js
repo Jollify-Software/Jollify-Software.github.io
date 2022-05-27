@@ -58836,7 +58836,7 @@ function $dabaa3a11c862622$export$880688ca0b595b5e(el) {
     let ex = $c91088a471695564$export$26f7310e1c83589c.youtube;
     let match = el.src.match(ex.regexp);
     console.log(match);
-    return $31a9a171bf15485f$export$c0bb0b647f701bb5`<a href="${ex.link}" target="_blank">${ex.linkText}
+    return $31a9a171bf15485f$export$c0bb0b647f701bb5`<a href="${ex.link}" target="_blank">${ex.linkText}</a><hr/>
         ${$96a7062113380d84$export$a55877ca9db47377(match, ()=>ex.template({
             id: match[2]
         })
