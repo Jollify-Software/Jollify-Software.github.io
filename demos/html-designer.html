@@ -7,12 +7,13 @@
 <body>
     <button onclick="setSlide1()">Slide 1</button><button onclick="setSlide2()">Slide 2</button>
     <button onclick="setTheme1()">Theme 1</button><button onclick="setTheme2()">Theme 2</button>
-
-    <h3>Background</h3>
+    <hr/>
+    <strong>Background:</strong>
     <juel-colour id="background-colour"></juel-colour>
-    <h3>Colour</h3>
+    <strong>Colour:</strong>
     <juel-colour id="colour"></juel-colour>
-
+    <hr/>
+    <i>Right click to open insert menu.</i>
     <juel-html-designer id="designer" html-id="slides-container">
         <section>
             <h1>Welcome</h1>
@@ -23,7 +24,6 @@
 
     <script>
         var ele = document.getElementById("designer");
-        //ele.registerInsertService(null, [{"id":"1","name":"Text","Items":[{"id":"1-1","name":"Emoji","Route":"input/emoji","IconClass":"fas fa-grin-wink","Class":"text-primary"},{"id":"1-2","name":"Text","Route":"input/text","IconClass":"fas fa-paragraph","Class":"text-primary","Info":{"Variations":[{"name":"Columns","Value":"::: columns :::"},{"name":"Column","Value":":::::: column ::::::"},{"name":"Draggable Container","Value":"::: draggable :::"}]}},{"id":"1-2","name":"Container","Route":"input/container","IconClass":"fas fa-box-open","Class":"text-primary","Info":{"Template":"::: :::","Variations":[{"name":"Draggable Container","Value":"::: draggable :::"},{"name":"Draggable Emoji Container","Value":"::: draggable :::"}]}},{"id":"1-5","name":"Table","Route":"input/table","IconClass":"fas fa-table","Class":"text-warning"},{"id":"1-3","name":"Code","Route":"input/code","IconClass":"fas fa-code","Class":"text-primary"},{"id":"1-4","name":"Equation","Route":"input/math","IconClass":"fas fa-square-root-alt","Class":"text-danger"}]},{"id":"2","name":"Information","Items":[{"name":"Chart","Route":"input/chart","IconClass":"fas fa-chart-bar","Class":"text-warning"},{"name":"Diagram","Route":"input/diagram","IconClass":"fas fa-project-diagram","Class":"text-info"},{"name":"Map","Route":"input/map","IconClass":"fas fa-map-marked-alt","Class":"text-primary","Info":{"OpenLink":"https://www.google.co.uk/maps","OpenLinkLabel":"Open Google Maps"}}]},{"id":"3","name":"Sound and Vision","Items":[{"id":"3-1","name":"YouTube","Route":"input/youtube","IconClass":"fab fa-youtube","Class":"text-danger","Info":{"OpenLink":"https://www.youtube.com","OpenLinkLabel":"Open YouTube","Template":"<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/{id}\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe"}},{"id":"3-2","name":"SketchFab","Route":"input/sketchfab","IconClass":"fab fa-sketchfab","Class":"text-info","Info":{"OpenLink":"https://www.sketchfab.com","OpenLinkLabel":"Open StetchFab","Template":"<div class=\"sketchfab-embed-wrapper\"> <iframe title=\"{name}\" width=\"640\" height=\"480\" src=\"https://sketchfab.com/models/{id}/embed\" frameborder=\"0\" allow=\"autoplay; fullscreen; vr\" mozallowfullscreen=\"true\" webkitallowfullscreen=\"true\"></iframe> </div>"}}]},{"id":"4","name":"Graphics","Items":[{"id":"4-1","name":"Shape","Route":"input/shape","IconClass":"fas fa-shapes","Class":"text-danger"},{"id":"4-2","name":"Widget","Route":"input/widget","IconClass":"fas fa-cogs","Class":"text-danger"}]}])
 
         ele.menuItems = [
             { id: '1', name: 'New slide', action: () => new Promise(resolve => resolve({ method: 'content', content :`<section>
@@ -43,7 +43,24 @@
             // TODO: Add images/Audio/Video/YouTube/SketchFab using Source picker
             // Note: Src Picker has two mode: embed and link - In final presentation both will be displayed in lightbox
             { selector: 'p', name: 'Bold', action: () => new Promise(resolve => resolve({ method: 'wrap', content: '<strong>'}))}
-        ]
+        ];
+
+        var background = document.getElementById("background-colour");
+        var colour = document.getElementById("colour");
+        
+        background.addEventListener('changed', function(event) {
+            let properties = {
+                "background-color": event.detail.value
+            };
+            ele.extendDesignerStyles(properties);
+        });
+        colour.addEventListener('changed', function(event) {
+            console.log(event)
+            let properties = {
+                "color": event.detail.value
+            };
+            ele.extendDesignerStyles(properties);
+        });
 
         window.setSlide1 = () => {
             ele.setContent(`<section>
