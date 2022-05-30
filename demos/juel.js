@@ -52657,7 +52657,7 @@ let $eeb209a94ffda472$export$ef9b1a59e592288f = _class1 = _dec3((_class1 = (_cla
 
 
 var $71360f301456d8f8$exports = {};
-$71360f301456d8f8$exports = ":host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  display: flex;\n  transition: width 0.8s, height 0.8s;\n}\n#container {\n  display: inline-flex;\n  align-items: flex-start;\n  width: 100%;\n  height: 100%;\n  transition: margin 0.8s, width 0.8s, height 0.8s;\n}\n#previous {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  z-index: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 10%;\n  padding: 0;\n  color: #fff;\n  text-align: center;\n  background: 0 0;\n  border: 0;\n  opacity: 0.25;\n  transition: opacity 0.15s ease;\n  cursor: pointer;\n  background-color: black;\n}\n#previous span {\n  width: 2rem;\n  height: 2rem;\n  background-image: var(--icon-previous);\n}\n#next {\n  right: 0;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  z-index: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 10%;\n  padding: 0;\n  color: #fff;\n  text-align: center;\n  background: 0 0;\n  border: 0;\n  opacity: 0.25;\n  transition: opacity 0.15s ease;\n  cursor: pointer;\n  background-color: black;\n}\n#next span {\n  width: 2rem;\n  height: 2rem;\n  background-image: var(--icon-next);\n}\n@media screen and (max-height: 500px) {\n  .item {\n    height: 100%;\n  }\n}\n\n";
+$71360f301456d8f8$exports = ":host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  display: flex;\n  transition: width 0.8s, height 0.8s;\n}\n.container {\n  display: inline-flex;\n  align-items: flex-start;\n  width: 100%;\n  height: 100%;\n  transition: margin 0.8s, width 0.8s, height 0.8s;\n}\n#previous {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  z-index: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 10%;\n  padding: 0;\n  color: #fff;\n  text-align: center;\n  background: 0 0;\n  border: 0;\n  opacity: 0.25;\n  transition: opacity 0.15s ease;\n  cursor: pointer;\n  background-color: black;\n}\n#previous span {\n  width: 2rem;\n  height: 2rem;\n  background-image: var(--icon-previous);\n}\n#next {\n  right: 0;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  z-index: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 10%;\n  padding: 0;\n  color: #fff;\n  text-align: center;\n  background: 0 0;\n  border: 0;\n  opacity: 0.25;\n  transition: opacity 0.15s ease;\n  cursor: pointer;\n  background-color: black;\n}\n#next span {\n  width: 2rem;\n  height: 2rem;\n  background-image: var(--icon-next);\n}\n@media screen and (max-height: 500px) {\n  .item {\n    height: 100%;\n  }\n}\n\n";
 
 
 
@@ -52673,7 +52673,7 @@ class $adf3473df9de3859$export$a4f347957ca31449 {
         this.positionHistory = [];
     }
     init() {
-        this.container = this.sp.shadowRoot.getElementById('container');
+        this.container = this.sp.shadowRoot.querySelector('.container');
         let first = this.container.querySelector('.item');
         let w = $(first).outerWidth();
         let h = $(first).outerHeight();
@@ -54852,9 +54852,8 @@ let $08a9072d9f510c2e$export$a594d2c8fae2c977 = _class1 = _dec16((_class1 = (_cl
             if (e.direction == 2) this.service.next();
             else if (e.direction == 4) this.service.previous();
         });
-        //this.service.init();
-        setTimeout(()=>this.service.init()
-        , 500);
+        this.service.init();
+    //setTimeout(() => this.service.init(), 500);
     }
     reset(resetChildren = false) {
         this.service.reset(resetChildren);
@@ -54876,7 +54875,7 @@ let $08a9072d9f510c2e$export$a594d2c8fae2c977 = _class1 = _dec16((_class1 = (_cl
     }
     render() {
         return $92fc1a28ab06907c$export$c0bb0b647f701bb5`${this.controls ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div id="next" part="next" @click="${this.scrollNext}"><span></span></div>` : ``}
-            <div id="container">
+            <div class="container">
                 ${$909f0c1cab7da6f5$export$eec70cb3a42440b6(this, (el, index)=>{
             let id = el.id ? el.id : `item-${index}`;
             el.setAttribute('slot', id);
@@ -55046,7 +55045,21 @@ var _class;
 var _class1, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3;
 var _dec4 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-lightbox");
 let $164b3db0ebede24c$export$a621b5cc906c547f = _class1 = _dec4((_class1 = (_class = class $164b3db0ebede24c$export$a621b5cc906c547f extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
+    constructor(){
+        super();
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "type", _descriptor, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "icon", _descriptor1, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "preview", _descriptor2, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "position", _descriptor3, this);
+        this.type = "image";
+        this.icon = false;
+        this.open = false;
+        this.sources = [];
+        this.content = [];
+        this.position = 0;
+    }
     firstLoad() {
+        this.sp = this.shadowRoot.querySelector("juel-scroll-pane");
         var elements = Array.prototype.slice.call(document.querySelectorAll('[data-lightbox], [data-lightbox-src'));
         for (var el of elements){
             el.addEventListener('click', (e)=>{
@@ -55059,12 +55072,13 @@ let $164b3db0ebede24c$export$a621b5cc906c547f = _class1 = _dec4((_class1 = (_cla
             this.content = (Array.prototype.slice.call(this.children) as HTMLElement[])
                 .filter(el => !el.matches("[slot]"));
             */ this.requestUpdate();
+        this.sp.requestUpdate();
     }
     load() {
-        this.sp = this.shadowRoot.querySelector("juel-scroll-pane");
         $(this.sp).off("scroll").on("scroll", (e)=>{
             console.log(e.detail);
             this.position = e.detail.index;
+            this.requestUpdate();
         });
     }
     toggle(e) {
@@ -55105,20 +55119,11 @@ let $164b3db0ebede24c$export$a621b5cc906c547f = _class1 = _dec4((_class1 = (_cla
             </div>
         `;
     }
-    constructor(...args){
-        super(...args);
-        this.string = "image";
-        this.open = false;
-        this.sources = [];
-        this.content = [];
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "type", _descriptor, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "icon", _descriptor1, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "preview", _descriptor2, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "position", _descriptor3, this);
-    }
 }, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($65e112ec692a27fa$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494({
     type: Boolean
-}), _dec2 = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec3 = $dd96f25eb320c952$export$d541bacb2bda4494(), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "type", [
+}), _dec2 = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec3 = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Number
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "type", [
     _dec
 ], {
     configurable: true,
@@ -55131,9 +55136,7 @@ let $164b3db0ebede24c$export$a621b5cc906c547f = _class1 = _dec4((_class1 = (_cla
     configurable: true,
     enumerable: true,
     writable: true,
-    initializer: function() {
-        return false;
-    }
+    initializer: void 0
 }), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "preview", [
     _dec2
 ], {
@@ -55147,9 +55150,7 @@ let $164b3db0ebede24c$export$a621b5cc906c547f = _class1 = _dec4((_class1 = (_cla
     configurable: true,
     enumerable: true,
     writable: true,
-    initializer: function() {
-        return 0;
-    }
+    initializer: void 0
 }), _class1)) || _class1;
 
 
@@ -56360,6 +56361,13 @@ var _class;
 var _class1, _descriptor, _dec, _descriptor1, _dec1;
 var _dec2 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-flip");
 let $89e2c64d7de5dc1b$export$770775f877e377e2 = _class1 = _dec2((_class1 = (_class = class $89e2c64d7de5dc1b$export$770775f877e377e2 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
+    constructor(){
+        super();
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "vertical", _descriptor, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "trigger", _descriptor1, this);
+        this.vertical = false;
+        this.trigger = "click";
+    }
     init() {
         let evtName;
         switch(this.trigger){
@@ -56391,11 +56399,6 @@ let $89e2c64d7de5dc1b$export$770775f877e377e2 = _class1 = _dec2((_class1 = (_cla
         </div>
       </div> `;
     }
-    constructor(...args){
-        super(...args);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "vertical", _descriptor, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "trigger", _descriptor1, this);
-    }
 }, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($ce811f70fc448223$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494({
     type: Boolean
 }), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494(), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "vertical", [
@@ -56404,18 +56407,14 @@ let $89e2c64d7de5dc1b$export$770775f877e377e2 = _class1 = _dec2((_class1 = (_cla
     configurable: true,
     enumerable: true,
     writable: true,
-    initializer: function() {
-        return false;
-    }
+    initializer: void 0
 }), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "trigger", [
     _dec1
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
-    initializer: function() {
-        return "click";
-    }
+    initializer: void 0
 }), _class1)) || _class1;
 
 
