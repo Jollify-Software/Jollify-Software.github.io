@@ -55767,41 +55767,9 @@ let $576a5e3126c80c31$export$7dec0544e22d70df = _class1 = _dec5((_class1 = (_cla
 
 
 
-var $3292feabd5f16f79$exports = {};
-$3292feabd5f16f79$exports = ":host {\n  display: inline-block;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n.btn {\n  position: relative;\n  overflow: hidden;\n}\n.btn-group {\n  position: relative;\n  display: inline-flex;\n  vertical-align: middle;\n}\n.btn-group > .btn-group:not(:last-child) > button,\n.btn-group > button:not(:last-child):not(.dropdown) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn-group:not(:first-child) > button,\n.btn-group > button:nth-child(n+3),\n.btn-group > :not(.btn-check) + button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\nbutton {\n  display: inline-block;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #212529;\n  text-align: center;\n  text-decoration: none;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  background-color: transparent;\n  border: 1px solid transparent;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  border-bottom-color: transparent;\n  border-left-color: transparent;\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  border-radius: 0.25rem;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  color: #fff;\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n\n";
 
-
-var $9066b25d33a19f2a$exports = {};
-$9066b25d33a19f2a$exports = "@keyframes ripple {\n  to {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n";
-
-
-class $2eafb92596faae42$export$df83e21cb27a0989 {
-    constructor(element){
-        this.element = element;
-        this.removeRipples = (el)=>{
-            el.removeEventListener('click', this.createRipple.bind(this));
-        };
-        element.addEventListener('click', this.createRipple.bind(this));
-        let root = element.getRootNode();
-        const style = document.createElement("style");
-        style.textContent = (/*@__PURE__*/$parcel$interopDefault($9066b25d33a19f2a$exports));
-        root.prepend(style);
-    }
-    createRipple(event) {
-        const button = this.element;
-        const circle = document.createElement("span");
-        const diameter = Math.max(button.clientWidth, button.clientHeight);
-        const radius = diameter / 2;
-        circle.setAttribute('part', 'ripple');
-        circle.style.width = circle.style.height = `${diameter}px`;
-        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
-        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
-        circle.classList.add("ripple");
-        const ripple = button.getElementsByClassName("ripple")[0];
-        if (ripple) ripple.remove();
-        button.appendChild(circle);
-    }
-}
+var $973991d1a89aeb6f$exports = {};
+$973991d1a89aeb6f$exports = ":host {\n  display: inline-block;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n\n";
 
 
 
@@ -55954,6 +55922,87 @@ function $406702000fd0643f$export$475a25926aecae05(el, type) {
     )}
                 ${el.addon && el.addon == "dropdown" ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div id="dropdown-items" style="display:none"><slot name="dropdown"></slot></div>` : $92fc1a28ab06907c$export$c0bb0b647f701bb5``}`;
 }
+
+
+
+
+
+var _class;
+var _class1, _descriptor, _dec;
+var _dec1 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-text");
+let $5a880220e80390d3$export$fba804f6e4c18126 = _class1 = _dec1((_class1 = (_class = class $5a880220e80390d3$export$fba804f6e4c18126 extends $3ea724c4e9544bc1$export$36eab7f492831059 {
+    constructor(){
+        super();
+        this.dropdownShown = false;
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "value", _descriptor, this);
+        this.value = "";
+    }
+    disconnectedCallback() {
+        if (this.isRipple) {
+            let btn = this.shadowRoot.firstElementChild;
+            this.r.removeRipples(btn);
+        }
+    }
+    onChange(e) {
+        let el = e.target;
+        this.value = el.value;
+        let args = {
+            value: this.value
+        };
+        $d0b207410768571b$export$65fee5f8f91a342f(this, $511fb495e7bef568$export$3fd36d65bf762270.Changed, args);
+    }
+    render() {
+        return $406702000fd0643f$export$475a25926aecae05(this, $b304b388a6882281$export$930c13e962764648.Text);
+    }
+}, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($973991d1a89aeb6f$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494(), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "value", [
+    _dec
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _class1)) || _class1;
+
+
+
+
+var $3292feabd5f16f79$exports = {};
+$3292feabd5f16f79$exports = ":host {\n  display: inline-block;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n.btn {\n  position: relative;\n  overflow: hidden;\n}\n.btn-group {\n  position: relative;\n  display: inline-flex;\n  vertical-align: middle;\n}\n.btn-group > .btn-group:not(:last-child) > button,\n.btn-group > button:not(:last-child):not(.dropdown) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn-group:not(:first-child) > button,\n.btn-group > button:nth-child(n+3),\n.btn-group > :not(.btn-check) + button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\nbutton {\n  display: inline-block;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #212529;\n  text-align: center;\n  text-decoration: none;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  background-color: transparent;\n  border: 1px solid transparent;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  border-bottom-color: transparent;\n  border-left-color: transparent;\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  border-radius: 0.25rem;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  color: #fff;\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n\n";
+
+
+var $9066b25d33a19f2a$exports = {};
+$9066b25d33a19f2a$exports = "@keyframes ripple {\n  to {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n";
+
+
+class $2eafb92596faae42$export$df83e21cb27a0989 {
+    constructor(element){
+        this.element = element;
+        this.removeRipples = (el)=>{
+            el.removeEventListener('click', this.createRipple.bind(this));
+        };
+        element.addEventListener('click', this.createRipple.bind(this));
+        let root = element.getRootNode();
+        const style = document.createElement("style");
+        style.textContent = (/*@__PURE__*/$parcel$interopDefault($9066b25d33a19f2a$exports));
+        root.prepend(style);
+    }
+    createRipple(event) {
+        const button = this.element;
+        const circle = document.createElement("span");
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+        circle.setAttribute('part', 'ripple');
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+        circle.classList.add("ripple");
+        const ripple = button.getElementsByClassName("ripple")[0];
+        if (ripple) ripple.remove();
+        button.appendChild(circle);
+    }
+}
+
+
 
 
 
@@ -76451,9 +76500,14 @@ let $bf96a9a54415ebb6$export$cbe39309dca83f17 = _class1 = _dec4((_class1 = (_cla
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "emoji", _descriptor2, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "fontAwesome", _descriptor3, this);
         this.fontAwesome = false;
+        this.servicePromise = new Promise((resolve, reject)=>{
+            this.serviceResolve = resolve;
+        });
     }
     setSlideIndex(index) {
-        this.service.slideIndex = index;
+        this.servicePromise.then((service)=>{
+            service.slideIndex = index;
+        });
     }
     getContent() {
         return this.service.markdownEditor.value();
@@ -76468,7 +76522,9 @@ let $bf96a9a54415ebb6$export$cbe39309dca83f17 = _class1 = _dec4((_class1 = (_cla
         return this.service.getLineFromIndex(index);
     }
     setContent(content) {
-        this.service.markdownEditor.value(content);
+        this.servicePromise.then((service)=>{
+            service.markdownEditor.value(content);
+        });
     }
     dispose() {
         this.service.dispose();
@@ -76489,14 +76545,17 @@ let $bf96a9a54415ebb6$export$cbe39309dca83f17 = _class1 = _dec4((_class1 = (_cla
         super.firstUpdated(_changedProperties);
     }
     firstLoad() {
+        if (this.innerText) $(this).contents().filter((i, el)=>el.nodeType == Node.TEXT_NODE
+        ).wrap('<div class="hide" />');
         this.service = new $45ffb0fabe2604b3$export$ab76cb380b38ca8a(this);
         this.service.init();
+        this.serviceResolve(this.service);
     }
     createRenderRoot() {
         return this;
     }
     render() {
-        return $31a9a171bf15485f$export$c0bb0b647f701bb5`<style>${$ca57216a6d082b28$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($62b5edc73d7d435e$exports)))}</style><textarea></textarea>${this.emoji ? $31a9a171bf15485f$export$c0bb0b647f701bb5`
+        return $31a9a171bf15485f$export$c0bb0b647f701bb5`<style>juel-markdown-editor > div.hide {display: none;}</style><style>${$ca57216a6d082b28$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($62b5edc73d7d435e$exports)))}</style><textarea>${this.innerText}</textarea>${this.emoji ? $31a9a171bf15485f$export$c0bb0b647f701bb5`
         <juel-dialog-manager>
             <div id="${this.emoji}" data-title="${this.emojiTitle}">
                 <juel-emoji-picker url="${$26e09bb2faff85a8$export$f68dd208b5df064d(this.emojiUri)}">
@@ -78057,11 +78116,17 @@ let $6ffbcaef3c35798d$export$5bd89606d6424226 = _class1 = _dec2((_class1 = (_cla
         this.theme = css;
         this.requestUpdate();
     }
+    setBaseStyles(css) {
+        this.baseStyles = css;
+        this.requestUpdate();
+    }
     firstLoad() {
         this.service.init(this);
     }
     render() {
-        return $31a9a171bf15485f$export$c0bb0b647f701bb5`${this.theme ? $31a9a171bf15485f$export$c0bb0b647f701bb5`<style id="html-theme">
+        return $31a9a171bf15485f$export$c0bb0b647f701bb5`${this.baseStyles ? $31a9a171bf15485f$export$c0bb0b647f701bb5`<style id="html-base-styles">
+        ${$ca57216a6d082b28$export$8d80f9cac07cdb3(this.baseStyles)}
+        </style>` : ``}${this.theme ? $31a9a171bf15485f$export$c0bb0b647f701bb5`<style id="html-theme">
             ${$ca57216a6d082b28$export$8d80f9cac07cdb3(this.theme)}
             </style>` : ``}
             ${this.style ? $31a9a171bf15485f$export$c0bb0b647f701bb5`<style id="style">
@@ -78093,6 +78158,355 @@ let $6ffbcaef3c35798d$export$5bd89606d6424226 = _class1 = _dec2((_class1 = (_cla
     writable: true,
     initializer: void 0
 }), _class1)) || _class1;
+
+
+let $5b10c86278968c18$export$43aeb5a0577a87bc;
+(function($5b10c86278968c18$export$43aeb5a0577a87bc) {
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["OK"] = 0] = "OK";
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["OKCancel"] = 1] = "OKCancel";
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["AbortRetryIgnore"] = 2] = "AbortRetryIgnore";
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["YesNoCancel"] = 3] = "YesNoCancel";
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["YesNo"] = 4] = "YesNo";
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["RetryCancel"] = 5] = "RetryCancel";
+    $5b10c86278968c18$export$43aeb5a0577a87bc[$5b10c86278968c18$export$43aeb5a0577a87bc["Success"] = 6] = "Success";
+})($5b10c86278968c18$export$43aeb5a0577a87bc || ($5b10c86278968c18$export$43aeb5a0577a87bc = {
+}));
+
+
+
+let $0c8219fe04bc4eff$export$20eb82256d49b3ef;
+(function($0c8219fe04bc4eff$export$20eb82256d49b3ef) {
+    $0c8219fe04bc4eff$export$20eb82256d49b3ef[$0c8219fe04bc4eff$export$20eb82256d49b3ef["None"] = 0] = "None";
+    $0c8219fe04bc4eff$export$20eb82256d49b3ef[$0c8219fe04bc4eff$export$20eb82256d49b3ef["OK"] = 1] = "OK";
+    $0c8219fe04bc4eff$export$20eb82256d49b3ef[$0c8219fe04bc4eff$export$20eb82256d49b3ef["Cancel"] = 2] = "Cancel";
+    $0c8219fe04bc4eff$export$20eb82256d49b3ef[$0c8219fe04bc4eff$export$20eb82256d49b3ef["Yes"] = 3] = "Yes";
+    $0c8219fe04bc4eff$export$20eb82256d49b3ef[$0c8219fe04bc4eff$export$20eb82256d49b3ef["No"] = 4] = "No";
+})($0c8219fe04bc4eff$export$20eb82256d49b3ef || ($0c8219fe04bc4eff$export$20eb82256d49b3ef = {
+}));
+
+
+var $76dc545112fbba8b$var$MessageBoxButtonStrategies = {
+};
+function $76dc545112fbba8b$var$GetLabel(args, name, label) {
+    return args.labels && name in args.labels ? args.labels["ok"] : label;
+}
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.OK] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "ok", "OK");
+    let okBtn = $(`<juel-button label="${lbl}" style="flex-basis: 100%;padding: .25rem;"></juel-button>`);
+    okBtn.on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.OK,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(okBtn);
+};
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.OKCancel] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "ok", "OK");
+    let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
+    let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="ok" label="${lbl}"></juel-button><juel-button id="cancel" label="${lbl2}></juel-button></div>`);
+    content.find("#ok").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.OK,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    content.find("#cancel").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(content);
+};
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.Success] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "success", "Success");
+    let okBtn = $(`<juel-button label="${lbl}" style="--background: --success;flex-basis: 100%;padding: .25rem;"></juel-button>`);
+    okBtn.on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.OK,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(okBtn);
+};
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.YesNo] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "yes", "Yes");
+    let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "no", "No");
+    let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="yes" style="--background: --success" label="${lbl}"></juel-button><juel-button id="no" style="--background: --danger" label="${lbl2}"></juel-button></div>`);
+    content.find("#yes").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    content.find("#no").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(content);
+};
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.YesNoCancel] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "yes", "Yes");
+    let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "no", "No");
+    let lbl3 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
+    let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="yes" style="--background: --success" label="${lbl}"></juel-button><juel-button id="no" style="--background: --danger" label="${lbl2}"></juel-button><juel-button id="cancel" label="${lbl3}"></juel-button></div>`);
+    content.find("#yes").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    content.find("#no").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No
+        });
+        msgBox.remove();
+    });
+    content.find("#cancel").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(content);
+};
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.RetryCancel] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "retry", "Retry");
+    let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
+    let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="retry" style="--background: --success" label="${lbl}"></juel-button><juel-button id="cancel" label="${lbl2}"></juel-button></div>`);
+    content.find("#retry").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    content.find("#cancel").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(content);
+};
+$76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.AbortRetryIgnore] = function(args, msgBox, resolve, reject) {
+    let lbl = $76dc545112fbba8b$var$GetLabel(args, "abort", "Abort");
+    let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "retry", "Retry");
+    let lbl3 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
+    let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="abort" style="--background: --danger" label="${lbl}"></juel-button><juel-button id="retry" style="--background: --success" label="${lbl2}"></juel-button><juel-button id="cancel" label="${lbl3}"></juel-button></div>`);
+    content.find("#abort").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No
+        });
+        msgBox.remove();
+    });
+    content.find("#retry").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
+            value: args.value
+        });
+        msgBox.remove();
+    });
+    content.find("#cancel").on("button-clicked", ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
+        });
+        msgBox.remove();
+    });
+    msgBox.find("#dialog-body").append(content);
+};
+var $76dc545112fbba8b$export$2e2bcd8739ae039 = $76dc545112fbba8b$var$MessageBoxButtonStrategies;
+
+
+let $c0e08ae7d47605f5$export$2b03a08a508dc70f;
+(function($c0e08ae7d47605f5$export$2b03a08a508dc70f) {
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Asterisk"] = 0] = "Asterisk";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Error"] = 1] = "Error";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Exclamation"] = 2] = "Exclamation";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Hand"] = 3] = "Hand";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Information"] = 4] = "Information";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Question"] = 5] = "Question";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Stop"] = 6] = "Stop";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Success"] = 7] = "Success";
+    $c0e08ae7d47605f5$export$2b03a08a508dc70f[$c0e08ae7d47605f5$export$2b03a08a508dc70f["Warning"] = 8] = "Warning";
+})($c0e08ae7d47605f5$export$2b03a08a508dc70f || ($c0e08ae7d47605f5$export$2b03a08a508dc70f = {
+}));
+
+
+var $e7eb656f573c61bc$exports = {};
+$e7eb656f573c61bc$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path fill=\"var(--fill, blue)\" d=\"M417.1 368c-5.937 10.27-16.69 16-27.75 16c-5.422 0-10.92-1.375-15.97-4.281L256 311.4V448c0 17.67-14.33 32-31.1 32S192 465.7 192 448V311.4l-118.3 68.29C68.67 382.6 63.17 384 57.75 384c-11.06 0-21.81-5.734-27.75-16c-8.828-15.31-3.594-34.88 11.72-43.72L159.1 256L41.72 187.7C26.41 178.9 21.17 159.3 29.1 144C36.63 132.5 49.26 126.7 61.65 128.2C65.78 128.7 69.88 130.1 73.72 132.3L192 200.6V64c0-17.67 14.33-32 32-32S256 46.33 256 64v136.6l118.3-68.29c3.838-2.213 7.939-3.539 12.07-4.051C398.7 126.7 411.4 132.5 417.1 144c8.828 15.31 3.594 34.88-11.72 43.72L288 256l118.3 68.28C421.6 333.1 426.8 352.7 417.1 368z\"></path></svg>";
+
+
+var $e8d51da77e163e86$exports = {};
+$e8d51da77e163e86$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"var(--dangor, red)\" d=\"M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM175 208.1L222.1 255.1L175 303C165.7 312.4 165.7 327.6 175 336.1C184.4 346.3 199.6 346.3 208.1 336.1L255.1 289.9L303 336.1C312.4 346.3 327.6 346.3 336.1 336.1C346.3 327.6 346.3 312.4 336.1 303L289.9 255.1L336.1 208.1C346.3 199.6 346.3 184.4 336.1 175C327.6 165.7 312.4 165.7 303 175L255.1 222.1L208.1 175C199.6 165.7 184.4 165.7 175 175C165.7 184.4 165.7 199.6 175 208.1V208.1z\"></path></svg>";
+
+
+var $87cbe029b02ccaa3$exports = {};
+$87cbe029b02ccaa3$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 128 512\"><path fill=\"var(--fille, blue)\" d=\"M64 352c17.69 0 32-14.32 32-31.1V64.01c0-17.67-14.31-32.01-32-32.01S32 46.34 32 64.01v255.1C32 337.7 46.31 352 64 352zM64 400c-22.09 0-40 17.91-40 40s17.91 39.1 40 39.1s40-17.9 40-39.1S86.09 400 64 400z\"></path></svg>";
+
+
+var $75cdbd8f12532380$exports = {};
+$75cdbd8f12532380$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"var(--fill, blue)\" d=\"M480 128v208c0 97.05-78.95 176-176 176h-37.72c-53.42 0-103.7-20.8-141.4-58.58l-113.1-113.1C3.906 332.5 0 322.2 0 312C0 290.7 17.15 272 40 272c10.23 0 20.47 3.906 28.28 11.72L128 343.4V64c0-17.67 14.33-32 32-32s32 14.33 32 32l.0729 176C192.1 248.8 199.2 256 208 256s16.07-7.164 16.07-16L224 32c0-17.67 14.33-32 32-32s32 14.33 32 32l.0484 208c0 8.836 7.111 16 15.95 16S320 248.8 320 240L320 64c0-17.67 14.33-32 32-32s32 14.33 32 32l.0729 176c0 8.836 7.091 16 15.93 16S416 248.8 416 240V128c0-17.67 14.33-32 32-32S480 110.3 480 128z\"></path></svg>";
+
+
+var $5cea6d2a14db92df$exports = {};
+$5cea6d2a14db92df$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"var(--info, lightblue)\" d=\"M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM232 152C232 138.8 242.8 128 256 128s24 10.75 24 24v128c0 13.25-10.75 24-24 24S232 293.3 232 280V152zM256 400c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 385.9 273.4 400 256 400z\"></path></svg>";
+
+
+var $65d46610c933671e$exports = {};
+$65d46610c933671e$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"blue\" d=\"M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z\"></path></svg>";
+
+
+var $399e0833fe2d7b1a$exports = {};
+$399e0833fe2d7b1a$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"var(--fill, var(--danger, red))\" d=\"M512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM99.5 144.8C77.15 176.1 64 214.5 64 256C64 362 149.1 448 256 448C297.5 448 335.9 434.9 367.2 412.5L99.5 144.8zM448 256C448 149.1 362 64 256 64C214.5 64 176.1 77.15 144.8 99.5L412.5 367.2C434.9 335.9 448 297.5 448 256V256z\"></path></svg>";
+
+
+var $7e62ce995e6ad0d9$exports = {};
+$7e62ce995e6ad0d9$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"var(--success, green)\" d=\"M0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256zM371.8 211.8C382.7 200.9 382.7 183.1 371.8 172.2C360.9 161.3 343.1 161.3 332.2 172.2L224 280.4L179.8 236.2C168.9 225.3 151.1 225.3 140.2 236.2C129.3 247.1 129.3 264.9 140.2 275.8L204.2 339.8C215.1 350.7 232.9 350.7 243.8 339.8L371.8 211.8z\"></path></svg>";
+
+
+var $08a375ee33f8ff52$exports = {};
+$08a375ee33f8ff52$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 448 512\"><path fill=\"var(--fill, blue)\" d=\"M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z\"></path></svg>";
+
+
+var $1137abccbb280d87$exports = {};
+$1137abccbb280d87$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 640 512\"><path fill=\"var(--fill, blue)\" d=\"M319.9 320c57.41 0 103.1-46.56 103.1-104c0-57.44-46.54-104-103.1-104c-57.41 0-103.1 46.56-103.1 104C215.9 273.4 262.5 320 319.9 320zM369.9 352H270.1C191.6 352 128 411.7 128 485.3C128 500.1 140.7 512 156.4 512h327.2C499.3 512 512 500.1 512 485.3C512 411.7 448.4 352 369.9 352zM512 160c44.18 0 80-35.82 80-80S556.2 0 512 0c-44.18 0-80 35.82-80 80S467.8 160 512 160zM183.9 216c0-5.449 .9824-10.63 1.609-15.91C174.6 194.1 162.6 192 149.9 192H88.08C39.44 192 0 233.8 0 285.3C0 295.6 7.887 304 17.62 304h199.5C196.7 280.2 183.9 249.7 183.9 216zM128 160c44.18 0 80-35.82 80-80S172.2 0 128 0C83.82 0 48 35.82 48 80S83.82 160 128 160zM551.9 192h-61.84c-12.8 0-24.88 3.037-35.86 8.24C454.8 205.5 455.8 210.6 455.8 216c0 33.71-12.78 64.21-33.16 88h199.7C632.1 304 640 295.6 640 285.3C640 233.8 600.6 192 551.9 192z\"></path></svg>";
+
+
+var $4e2cd8cf1331f29d$exports = {};
+$4e2cd8cf1331f29d$exports = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><path fill=\"var(--warning, orange)\" d=\"M506.3 417l-213.3-364c-16.33-28-57.54-28-73.98 0l-213.2 364C-10.59 444.9 9.849 480 42.74 480h426.6C502.1 480 522.6 445 506.3 417zM232 168c0-13.25 10.75-24 24-24S280 154.8 280 168v128c0 13.25-10.75 24-23.1 24S232 309.3 232 296V168zM256 416c-17.36 0-31.44-14.08-31.44-31.44c0-17.36 14.07-31.44 31.44-31.44s31.44 14.08 31.44 31.44C287.4 401.9 273.4 416 256 416z\"></path></svg>";
+
+
+let $0b02a07968517117$export$72a45caaa852d706;
+(function($0b02a07968517117$export$72a45caaa852d706) {
+    $0b02a07968517117$export$72a45caaa852d706.asterisk = (/*@__PURE__*/$parcel$interopDefault($e7eb656f573c61bc$exports));
+    $0b02a07968517117$export$72a45caaa852d706.error = (/*@__PURE__*/$parcel$interopDefault($e8d51da77e163e86$exports));
+    $0b02a07968517117$export$72a45caaa852d706.exclamation = (/*@__PURE__*/$parcel$interopDefault($87cbe029b02ccaa3$exports));
+    $0b02a07968517117$export$72a45caaa852d706.hand = (/*@__PURE__*/$parcel$interopDefault($75cdbd8f12532380$exports));
+    $0b02a07968517117$export$72a45caaa852d706.info = (/*@__PURE__*/$parcel$interopDefault($5cea6d2a14db92df$exports));
+    $0b02a07968517117$export$72a45caaa852d706.question = (/*@__PURE__*/$parcel$interopDefault($65d46610c933671e$exports));
+    $0b02a07968517117$export$72a45caaa852d706.stop = (/*@__PURE__*/$parcel$interopDefault($399e0833fe2d7b1a$exports));
+    $0b02a07968517117$export$72a45caaa852d706.success = (/*@__PURE__*/$parcel$interopDefault($7e62ce995e6ad0d9$exports));
+    $0b02a07968517117$export$72a45caaa852d706.user = (/*@__PURE__*/$parcel$interopDefault($08a375ee33f8ff52$exports));
+    $0b02a07968517117$export$72a45caaa852d706.users = (/*@__PURE__*/$parcel$interopDefault($1137abccbb280d87$exports));
+    $0b02a07968517117$export$72a45caaa852d706.warning = (/*@__PURE__*/$parcel$interopDefault($4e2cd8cf1331f29d$exports));
+})($0b02a07968517117$export$72a45caaa852d706 || ($0b02a07968517117$export$72a45caaa852d706 = {
+}));
+
+
+var $77e33917445718dc$var$MessageBoxIconStrategies = {
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Asterisk] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.asterisk).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Error] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.error).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Exclamation] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.exclamation).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Hand] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.hand).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Information] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.info).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Question] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.question).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Stop] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.stop).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Success] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.success).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+$77e33917445718dc$var$MessageBoxIconStrategies[$c0e08ae7d47605f5$export$2b03a08a508dc70f.Warning] = (ars, msgBox)=>{
+    let icn = $($0b02a07968517117$export$72a45caaa852d706.warning).css("flex", 1);
+    msgBox.find("#dialog-body").append(icn);
+};
+var $77e33917445718dc$export$2e2bcd8739ae039 = $77e33917445718dc$var$MessageBoxIconStrategies;
+
+
+
+
+var $fadf5cc266d19197$var$MessageBoxInputStrategies = {
+};
+$fadf5cc266d19197$var$MessageBoxInputStrategies["text"] = (args, msgBox)=>{
+    let input = $(`<juel-text style="flex-basis: 100%" value="${args.value ?? ""}"></juel-text>`);
+    input.on($511fb495e7bef568$export$3fd36d65bf762270.Changed, (e)=>{
+        args.value = e.detail.value;
+    });
+    msgBox.find("#dialog-body").append(input);
+};
+$fadf5cc266d19197$var$MessageBoxInputStrategies["markdown"] = (args, msgBox)=>{
+    let input = $(`<juel-markdown-editor style="flex-basis: 100%"${args.attr ? Object.keys(args.attr).map((key)=>{
+        return ` ${key}="${args.attr[key]}"`;
+    }) : ``}></juel-markdown-editor>`);
+    let editor = input[0];
+    if (args.value) editor.setContent(args.value);
+    input.on($2c40e43479f537be$export$ea5cbff24d8b181c.editorChanges, (e)=>{
+        args.value = e.detail.value;
+    });
+    msgBox.find("#dialog-body").append(input);
+};
+var $fadf5cc266d19197$export$2e2bcd8739ae039 = $fadf5cc266d19197$var$MessageBoxInputStrategies;
+
+
+let $78438401b0f21ede$var$MessageBoxModule;
+(function(MessageBoxModule) {
+    MessageBoxModule.show = (args)=>{
+        return new Promise((resolve, reject)=>{
+            let msgBox = $(`<div id="overlay" style="position: fixed;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;top: 0px;left: 0px;pointer-events: none;z-index: 101;background-color: rgb(58, 71, 77);">
+        <div style="max-height: 100%;display: flex;flex-direction: column;position: absolute;pointer-events: all;z-index: 101;overflow: hidden;background-color: rgb(255, 255, 255);box-shadow: rgb(0 0 0 / 22%) 0px 22px 64px 0px;border-radius: 4px;">
+        <div id="dialog-title" style="background-color: rgba(243, 245, 247, 0.56);padding: 0.6875rem 1.25rem;font-size: 1.25rem;line-height: 1.875rem;border-bottom: none;">
+        <span>${args.title}</span>
+        </div>
+        <div id="dialog-body" style="padding: 1.25rem;display: flex;flex-wrap: wrap;">
+        ${args.text ? `<p>${args.text}</p>` : ``}
+        </div>
+        </div>
+        </div>`);
+            if ('icon' in args) {
+                if (args.icon in $77e33917445718dc$export$2e2bcd8739ae039) $77e33917445718dc$export$2e2bcd8739ae039[args.icon](args, msgBox);
+            }
+            if ('prompt' in args) {
+                if (args.prompt == "color") args.prompt = "colour";
+                if (args.prompt in $fadf5cc266d19197$export$2e2bcd8739ae039) $fadf5cc266d19197$export$2e2bcd8739ae039[args.prompt](args, msgBox);
+            }
+            if ('buttons' in args) // TODO: If object
+            {
+                if (args.buttons in $76dc545112fbba8b$export$2e2bcd8739ae039) $76dc545112fbba8b$export$2e2bcd8739ae039[args.buttons](args, msgBox, resolve, reject);
+            } else $76dc545112fbba8b$export$2e2bcd8739ae039[$5b10c86278968c18$export$43aeb5a0577a87bc.OK](args, msgBox, resolve, reject);
+            if (args.close && args.close == true) {
+                let closeBtn = $(`<div class="close" style="float: right;background-image: var(--icon-close);width: 26px;height: 26px;margin-top: 3%;background-repeat: no-repeat;background-position: center center;"></div>`);
+                closeBtn.on("click", ()=>{
+                    msgBox.remove();
+                    resolve(0);
+                });
+                msgBox.find("#dialog-title").append(closeBtn);
+            }
+            $(document.body).append(msgBox);
+        });
+    };
+})($78438401b0f21ede$var$MessageBoxModule || ($78438401b0f21ede$var$MessageBoxModule = {
+}));
+window.juel.messageBox = $78438401b0f21ede$var$MessageBoxModule;
 
 
 $0602f09c880c9911$export$af899be8b8440dd5();
