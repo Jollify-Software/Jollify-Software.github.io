@@ -47606,7 +47606,7 @@ var $2a5a3354abb46c12$exports = {};
 
 
 var $3cb3c247f61e344f$exports = {};
-$3cb3c247f61e344f$exports = ":root {\n  --icon-previous: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e\");\n  --icon-next: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e\");\n  --icon-indicator: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e\");\n  --icon-crosshair: url(\"data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' id='root' version='1.1' viewBox='0 0 16 16'%3E%3Ccircle fill='none' stroke='currentColor' cx='8' cy='8' r='6'/%3E%3Cpath fill='none' stroke='currentColor' d='M 8 0 L 8 6.5'/%3E%3Cpath fill='none' stroke='currentColor' d='M 0 8 L 6.5 8'/%3E%3Cpath fill='none' stroke='currentColor' d='M 8 9.5 L 8 16'/%3E%3Cpath fill='none' stroke='currentColor' d='M 9.5 8 L 16 8'/%3E%3C/svg%3E\");\n  --icon-close: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20px' height='20px' viewBox='0 0 24 24'%3E%3Cpath class='fslightbox-svg-path' d='M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z'%3E%3C/path%3E%3C/svg%3E\");\n  --icon-tick: url(\"data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='var(--icon, none)' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e\");\n}\n.icon {\n  width: 48px;\n  height: 48px;\n}\n.icon-md {\n  width: 32px;\n  height: 32px;\n}\n.icon-sm {\n  width: 16px;\n  height: 16px;\n}\n:root {\n  --highlight: #007bff;\n  --active: #e7f1ff;\n  --primary: #007bff;\n  --secondary: #6c757d;\n  --tertiary: salmon;\n  --light: #f8f9fa;\n  --dark: #343a40;\n  --success: #28a745;\n  --info: #17a2b8;\n  --warning: #ffc107;\n  --danger: #dc3545;\n  --highlight-text: #343a40;\n  --active-text: #0c63e4;\n  --primary-text: #343a40;\n  --secondary-text: #f8f9fa;\n  --tertiary-text: salmon;\n  --light-text: #f8f9fa;\n  --dark-text: #343a40;\n  --success-text: #28a745;\n  --info-text: #343a40;\n  --warning-text: #343a40;\n  --danger-text: #dc3545;\n}\n:root {\n  --justify: center;\n  --padding-left: 32px;\n  --padding-right: 32px;\n}\n::part(ripple) {\n  position: absolute;\n  /* The absolute position we mentioned earlier */\n  border-radius: 50%;\n  transform: scale(0);\n  animation: ripple 600ms linear;\n  background-color: rgba(255, 255, 255, 0.7);\n}\njuel-dialog-manager > * {\n  display: none;\n}\n\n";
+$3cb3c247f61e344f$exports = ":root {\n  --icon-previous: url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22var%28--fil%2C%20%2323fff%29%22%20d%3D%22M11.354%201.646a.5.5%200%200%201%200%20.708L5.707%208l5.647%205.646a.5.5%200%200%201-.708.708l-6-6a.5.5%200%200%201%200-.708l6-6a.5.5%200%200%201%20.708%200z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E\");\n  --icon-next: url(\"data:image/svg+xml,%3Ccsvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22var%28--fill%2C%20%2323fff%29%22%20d%3D%22M4.646%201.646a.5.5%200%200%201%20.708%200l6%206a.5.5%200%200%201%200%20.708l-6%206a.5.5%200%200%201-.708-.708L10.293%208%204.646%202.354a.5.5%200%200%201%200-.708z%22%3E%3C%2Fpath%3E%3C%2Fcsvg%3E\");\n  --icon-indicator: url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22rgba%28280%2C0%2C0%2C.5%29%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222%22%20d%3D%22M5%2014l6-6-6-6%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E\");\n  --icon-crosshair: url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20id%3D%22root%22%20version%3D%221.1%22%20viewBox%3D%220%200%2016%2016%22%3E%3Ccircle%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%226%22%3E%3C%2Fcircle%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20d%3D%22M%208%200%20L%208%206.5%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20d%3D%22M%200%208%20L%206.5%208%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20d%3D%22M%208%209.5%20L%208%2016%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20d%3D%22M%209.5%208%20L%2016%208%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E\");\n  --icon-close: url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2220px%22%20height%3D%2220px%22%20viewBox%3D%220%200%2024%2024%22%3E%3Cpath%20fill%3D%22var%28--fill%2C%20black%29%22%20d%3D%22M%204.7070312%203.2929688%20L%203.2929688%204.7070312%20L%2010.585938%2012%20L%203.2929688%2019.292969%20L%204.7070312%2020.707031%20L%2012%2013.414062%20L%2019.292969%2020.707031%20L%2020.707031%2019.292969%20L%2013.414062%2012%20L%2020.707031%204.7070312%20L%2019.292969%203.2929688%20L%2012%2010.585938%20L%204.7070312%203.2929688%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E\");\n  --icon-tick: url(\"data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2020%2020%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22var%28--stroke%2C%20black%29%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%223%22%20d%3D%22M6%2010l3%203l6-6%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E\");\n}\n.icon {\n  width: 48px;\n  height: 48px;\n}\n.icon-md {\n  width: 32px;\n  height: 32px;\n}\n.icon-sm {\n  width: 16px;\n  height: 16px;\n}\n:root {\n  --highlight: #007bff;\n  --active: #e7f1ff;\n  --primary: #007bff;\n  --secondary: #6c757d;\n  --tertiary: salmon;\n  --light: #f8f9fa;\n  --dark: #343a40;\n  --success: #28a745;\n  --info: #17a2b8;\n  --warning: #ffc107;\n  --danger: #dc3545;\n  --highlight-text: #343a40;\n  --active-text: #0c63e4;\n  --primary-text: #343a40;\n  --secondary-text: #f8f9fa;\n  --tertiary-text: salmon;\n  --light-text: #f8f9fa;\n  --dark-text: #343a40;\n  --success-text: #28a745;\n  --info-text: #343a40;\n  --warning-text: #343a40;\n  --danger-text: #dc3545;\n}\n:root {\n  --justify: center;\n  --padding-left: 32px;\n  --padding-right: 32px;\n}\n::part(ripple) {\n  position: absolute;\n  /* The absolute position we mentioned earlier */\n  border-radius: 50%;\n  transform: scale(0);\n  animation: ripple 600ms linear;\n  background-color: rgba(255, 255, 255, 0.7);\n}\njuel-dialog-manager > * {\n  display: none;\n}\n\n";
 
 
 window.juel = $5609c3f7a106030f$export$80e45fb591232624;
@@ -55776,8 +55776,180 @@ $973991d1a89aeb6f$exports = ":host {\n  display: inline-block;\n}\n.input-group 
 
 
 
+
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const { H: $874d526a9d971de5$var$i  } = $92fc1a28ab06907c$export$8613d1ca9052b22e, $874d526a9d971de5$export$c3825b437cbdea5c = (o)=>null === o || "object" != typeof o && "function" != typeof o
+, $874d526a9d971de5$export$80c36ae3cab9881d = {
+    HTML: 1,
+    SVG: 2
+}, $874d526a9d971de5$export$6b6d145ec2a44ca9 = (o, i)=>{
+    var $874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$80c36ae3cab9881d;
+    return void 0 === i ? void 0 !== (null === ($874d526a9d971de5$export$c3825b437cbdea5c = o) || void 0 === $874d526a9d971de5$export$c3825b437cbdea5c ? void 0 : $874d526a9d971de5$export$c3825b437cbdea5c._$litType$) : (null === ($874d526a9d971de5$export$80c36ae3cab9881d = o) || void 0 === $874d526a9d971de5$export$80c36ae3cab9881d ? void 0 : $874d526a9d971de5$export$80c36ae3cab9881d._$litType$) === i;
+}, $874d526a9d971de5$export$2f448fec17d50a3e = (o)=>{
+    var i;
+    return void 0 !== (null === (i = o) || void 0 === i ? void 0 : i._$litDirective$);
+}, $874d526a9d971de5$export$f28e31de6a6eaf32 = (o)=>{
+    var i;
+    return null === (i = o) || void 0 === i ? void 0 : i._$litDirective$;
+}, $874d526a9d971de5$export$7f431ad0fff82fd9 = (o)=>void 0 === o.strings
+, $874d526a9d971de5$var$e = ()=>document.createComment("")
+, $874d526a9d971de5$export$291b2338ad9b0b30 = (o, $874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$80c36ae3cab9881d)=>{
+    var $874d526a9d971de5$export$6b6d145ec2a44ca9;
+    const $874d526a9d971de5$export$2f448fec17d50a3e = o._$AA.parentNode, $874d526a9d971de5$export$f28e31de6a6eaf32 = void 0 === $874d526a9d971de5$export$c3825b437cbdea5c ? o._$AB : $874d526a9d971de5$export$c3825b437cbdea5c._$AA;
+    if (void 0 === $874d526a9d971de5$export$80c36ae3cab9881d) {
+        const $874d526a9d971de5$export$c3825b437cbdea5c = $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore($874d526a9d971de5$var$e(), $874d526a9d971de5$export$f28e31de6a6eaf32), $874d526a9d971de5$export$6b6d145ec2a44ca9 = $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore($874d526a9d971de5$var$e(), $874d526a9d971de5$export$f28e31de6a6eaf32);
+        $874d526a9d971de5$export$80c36ae3cab9881d = new $874d526a9d971de5$var$i($874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$6b6d145ec2a44ca9, o, o.options);
+    } else {
+        const i = $874d526a9d971de5$export$80c36ae3cab9881d._$AB.nextSibling, $874d526a9d971de5$export$c3825b437cbdea5c = $874d526a9d971de5$export$80c36ae3cab9881d._$AM, $874d526a9d971de5$export$7f431ad0fff82fd9 = $874d526a9d971de5$export$c3825b437cbdea5c !== o;
+        if ($874d526a9d971de5$export$7f431ad0fff82fd9) {
+            let i;
+            null === ($874d526a9d971de5$export$6b6d145ec2a44ca9 = $874d526a9d971de5$export$80c36ae3cab9881d._$AQ) || void 0 === $874d526a9d971de5$export$6b6d145ec2a44ca9 || $874d526a9d971de5$export$6b6d145ec2a44ca9.call($874d526a9d971de5$export$80c36ae3cab9881d, o), $874d526a9d971de5$export$80c36ae3cab9881d._$AM = o, void 0 !== $874d526a9d971de5$export$80c36ae3cab9881d._$AP && (i = o._$AU) !== $874d526a9d971de5$export$c3825b437cbdea5c._$AU && $874d526a9d971de5$export$80c36ae3cab9881d._$AP(i);
+        }
+        if (i !== $874d526a9d971de5$export$f28e31de6a6eaf32 || $874d526a9d971de5$export$7f431ad0fff82fd9) {
+            let o = $874d526a9d971de5$export$80c36ae3cab9881d._$AA;
+            for(; o !== i;){
+                const i = o.nextSibling;
+                $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore(o, $874d526a9d971de5$export$f28e31de6a6eaf32), o = i;
+            }
+        }
+    }
+    return $874d526a9d971de5$export$80c36ae3cab9881d;
+}, $874d526a9d971de5$export$cb8bf9562088e9f4 = (o, i, $874d526a9d971de5$export$c3825b437cbdea5c = o)=>(o._$AI(i, $874d526a9d971de5$export$c3825b437cbdea5c), o)
+, $874d526a9d971de5$var$f = {
+}, $874d526a9d971de5$export$ea70d9dd5965b1c8 = (o, i = $874d526a9d971de5$var$f)=>o._$AH = i
+, $874d526a9d971de5$export$59e9bce518cde500 = (o)=>o._$AH
+, $874d526a9d971de5$export$3133b3144bbba267 = (o)=>{
+    var i;
+    null === (i = o._$AP) || void 0 === i || i.call(o, !1, !0);
+    let $874d526a9d971de5$export$c3825b437cbdea5c = o._$AA;
+    const $874d526a9d971de5$export$80c36ae3cab9881d = o._$AB.nextSibling;
+    for(; $874d526a9d971de5$export$c3825b437cbdea5c !== $874d526a9d971de5$export$80c36ae3cab9881d;){
+        const o = $874d526a9d971de5$export$c3825b437cbdea5c.nextSibling;
+        $874d526a9d971de5$export$c3825b437cbdea5c.remove(), $874d526a9d971de5$export$c3825b437cbdea5c = o;
+    }
+}, $874d526a9d971de5$export$7f600b8138c094dc = (o)=>{
+    o._$AR();
+};
+
+
+
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const $6fa4203295149a94$var$e = (i, t)=>{
+    var s, o;
+    const n = i._$AN;
+    if (void 0 === n) return !1;
+    for (const i1 of n)null === (o = (s = i1)._$AO) || void 0 === o || o.call(s, t, !1), $6fa4203295149a94$var$e(i1, t);
+    return !0;
+}, $6fa4203295149a94$var$o = (i)=>{
+    let t, s;
+    do {
+        if (void 0 === (t = i._$AM)) break;
+        s = t._$AN, s.delete(i), i = t;
+    }while (0 === (null == s ? void 0 : s.size))
+}, $6fa4203295149a94$var$n = (i)=>{
+    for(let t; t = i._$AM; i = t){
+        let s = t._$AN;
+        if (void 0 === s) t._$AN = s = new Set;
+        else if (s.has(i)) break;
+        s.add(i), $6fa4203295149a94$var$l(t);
+    }
+};
+function $6fa4203295149a94$var$r(i) {
+    void 0 !== this._$AN ? ($6fa4203295149a94$var$o(this), this._$AM = i, $6fa4203295149a94$var$n(this)) : this._$AM = i;
+}
+function $6fa4203295149a94$var$h(i, t = !1, s = 0) {
+    const n = this._$AH, r = this._$AN;
+    if (void 0 !== r && 0 !== r.size) {
+        if (t) {
+            if (Array.isArray(n)) for(let i = s; i < n.length; i++)$6fa4203295149a94$var$e(n[i], !1), $6fa4203295149a94$var$o(n[i]);
+            else null != n && ($6fa4203295149a94$var$e(n, !1), $6fa4203295149a94$var$o(n));
+        } else $6fa4203295149a94$var$e(this, i);
+    }
+}
+const $6fa4203295149a94$var$l = (i)=>{
+    var t, e, o, n;
+    i.type == $b51c4a33c90902d9$export$9ba3b3f20a85bfa.CHILD && (null !== (t = (o = i)._$AP) && void 0 !== t || (o._$AP = $6fa4203295149a94$var$h), null !== (e = (n = i)._$AQ) && void 0 !== e || (n._$AQ = $6fa4203295149a94$var$r));
+};
+class $6fa4203295149a94$export$7d025501802325e extends $b51c4a33c90902d9$export$befdefbdce210f91 {
+    constructor(){
+        super(...arguments), this._$AN = void 0;
+    }
+    _$AT(i, t, s) {
+        super._$AT(i, t, s), $6fa4203295149a94$var$n(this), this.isConnected = i._$AU;
+    }
+    _$AO(i, t = !0) {
+        var s, n;
+        i !== this.isConnected && (this.isConnected = i, i ? null === (s = this.reconnected) || void 0 === s || s.call(this) : null === (n = this.disconnected) || void 0 === n || n.call(this)), t && ($6fa4203295149a94$var$e(this, i), $6fa4203295149a94$var$o(this));
+    }
+    setValue(t) {
+        if ($874d526a9d971de5$export$7f431ad0fff82fd9(this._$Ct)) this._$Ct._$AI(t, this);
+        else {
+            const i = [
+                ...this._$Ct._$AH
+            ];
+            i[this._$Ci] = t, this._$Ct._$AI(i, this, 0);
+        }
+    }
+    disconnected() {
+    }
+    reconnected() {
+    }
+}
+
+
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const $320ee408841dc6c9$export$7d1e3a5e95ceca43 = ()=>new $320ee408841dc6c9$var$o
+;
+class $320ee408841dc6c9$var$o {
+}
+const $320ee408841dc6c9$var$h = new WeakMap, $320ee408841dc6c9$export$eff4d24c3ff7876e = $b51c4a33c90902d9$export$99b43ad1ed32e735(class extends $6fa4203295149a94$export$7d025501802325e {
+    render(i) {
+        return $92fc1a28ab06907c$export$45b790e32b2810ee;
+    }
+    update(i, [s]) {
+        var $320ee408841dc6c9$export$7d1e3a5e95ceca43;
+        const o = s !== this.U;
+        return o && void 0 !== this.U && this.ot(void 0), (o || this.rt !== this.lt) && (this.U = s, this.ht = null === ($320ee408841dc6c9$export$7d1e3a5e95ceca43 = i.options) || void 0 === $320ee408841dc6c9$export$7d1e3a5e95ceca43 ? void 0 : $320ee408841dc6c9$export$7d1e3a5e95ceca43.host, this.ot(this.lt = i.element)), $92fc1a28ab06907c$export$45b790e32b2810ee;
+    }
+    ot(t) {
+        "function" == typeof this.U ? (void 0 !== $320ee408841dc6c9$var$h.get(this.U) && this.U.call(this.ht, void 0), $320ee408841dc6c9$var$h.set(this.U, t), void 0 !== t && this.U.call(this.ht, t)) : this.U.value = t;
+    }
+    get rt() {
+        var t;
+        return "function" == typeof this.U ? $320ee408841dc6c9$var$h.get(this.U) : null === (t = this.U) || void 0 === t ? void 0 : t.value;
+    }
+    disconnected() {
+        this.rt === this.lt && this.ot(void 0);
+    }
+    reconnected() {
+        this.ot(this.lt);
+    }
+});
+
+
+
+
 var _class, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3;
 let $3ea724c4e9544bc1$export$36eab7f492831059 = (_class = class $3ea724c4e9544bc1$export$36eab7f492831059 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
+    firstUpdated() {
+        if (this.input.value) this.input.value.focus();
+    }
+    focus(options) {
+        if (this.input.value) this.input.value.focus();
+        super.focus(options);
+    }
     onClick(e) {
     }
     toggleDropdown() {
@@ -55794,6 +55966,7 @@ let $3ea724c4e9544bc1$export$36eab7f492831059 = (_class = class $3ea724c4e9544bc
     }
     constructor(...args){
         super(...args);
+        this.input = $320ee408841dc6c9$export$7d1e3a5e95ceca43();
         this.dropdownShown = false;
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "addon", _descriptor, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "addonActive", _descriptor1, this);
@@ -55878,20 +56051,23 @@ let $b304b388a6882281$export$930c13e962764648;
 
 
 
+
 function $5f7bb4adc4a2cfa9$export$43c51f51f0b06995(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input id="input" type="range" .value=${$969213c2a2450f90$export$f68dd208b5df064d(el.value)} min="${$969213c2a2450f90$export$f68dd208b5df064d(el.min)}" max="${$969213c2a2450f90$export$f68dd208b5df064d(el.max)}" step="${$969213c2a2450f90$export$f68dd208b5df064d(el.step)}" @change="${el.onChange}">`;
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} id="input" type="range" .value=${$969213c2a2450f90$export$f68dd208b5df064d(el.value)} min="${$969213c2a2450f90$export$f68dd208b5df064d(el.min)}" max="${$969213c2a2450f90$export$f68dd208b5df064d(el.max)}" step="${$969213c2a2450f90$export$f68dd208b5df064d(el.step)}" @change="${el.onChange}">`;
 }
+
 
 
 
 function $5e09076ad5059077$export$554cf187947ae74d(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label part="label" for="text"><slot name="content">${el.label}</slot></label><input part="input" .value="${el.value}" class="text" @change="${el.onChange}">`;
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label part="label" for="text"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} part="input" .value="${el.value}" class="text" @change="${el.onChange}">`;
 }
 
 
 
+
 function $444bd713984e1b8e$export$85d8fe04c954eac(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input type="checkbox" .checked="${el.value}" id="input" @change="${el.onChange}">`;
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} type="checkbox" .checked="${el.value}" id="input" @change="${el.onChange}">`;
 }
 
 
@@ -78193,12 +78369,16 @@ function $76dc545112fbba8b$var$GetLabel(args, name, label) {
 $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.OK] = function(args, msgBox, resolve, reject) {
     let lbl = $76dc545112fbba8b$var$GetLabel(args, "ok", "OK");
     let okBtn = $(`<juel-button label="${lbl}" style="flex-basis: 100%;padding: .25rem;"></juel-button>`);
-    okBtn.on("button-clicked", ()=>{
+    let okClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.OK,
             value: args.value
         });
         msgBox.remove();
+    };
+    $(okBtn).on("button-clicked keyup", okClick);
+    msgBox.find('#dialog').on('keyup', (e)=>{
+        if (e.key == "Enter") okClick();
     });
     msgBox.find("#dialog-body").append(okBtn);
 };
@@ -78206,50 +78386,60 @@ $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5
     let lbl = $76dc545112fbba8b$var$GetLabel(args, "ok", "OK");
     let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
     let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="ok" label="${lbl}"></juel-button><juel-button id="cancel" label="${lbl2}></juel-button></div>`);
-    content.find("#ok").on("button-clicked", ()=>{
+    let okClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.OK,
             value: args.value
         });
         msgBox.remove();
-    });
-    content.find("#cancel").on("button-clicked", ()=>{
+    };
+    let cancelClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
         });
         msgBox.remove();
+    };
+    msgBox.find('#dialog').on('keyup', (e)=>{
+        if (e.key == "Enter") okClick();
+        else if (e.key == "Escape") cancelClick();
     });
+    content.find("#ok").on("button-clicked", okClick);
+    content.find("#cancel").on("button-clicked", cancelClick);
     msgBox.find("#dialog-body").append(content);
 };
 $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.Success] = function(args, msgBox, resolve, reject) {
     let lbl = $76dc545112fbba8b$var$GetLabel(args, "success", "Success");
     let okBtn = $(`<juel-button label="${lbl}" style="--background: --success;flex-basis: 100%;padding: .25rem;"></juel-button>`);
-    okBtn.on("button-clicked", ()=>{
+    let okClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.OK,
             value: args.value
         });
         msgBox.remove();
-    });
+    };
+    okBtn.on("button-clicked", okClick);
     msgBox.find("#dialog-body").append(okBtn);
 };
 $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.YesNo] = function(args, msgBox, resolve, reject) {
     let lbl = $76dc545112fbba8b$var$GetLabel(args, "yes", "Yes");
     let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "no", "No");
     let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="yes" style="--background: --success" label="${lbl}"></juel-button><juel-button id="no" style="--background: --danger" label="${lbl2}"></juel-button></div>`);
-    content.find("#yes").on("button-clicked", ()=>{
+    let yesClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
             value: args.value
         });
         msgBox.remove();
-    });
-    content.find("#no").on("button-clicked", ()=>{
+    };
+    let noClick = ()=>{
         resolve({
-            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No,
+            value: args.value
         });
         msgBox.remove();
-    });
+    };
+    content.find("#yes").on("button-clicked", yesClick);
+    content.find("#no").on("button-clicked", noClick);
     msgBox.find("#dialog-body").append(content);
 };
 $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.YesNoCancel] = function(args, msgBox, resolve, reject) {
@@ -78257,44 +78447,50 @@ $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5
     let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "no", "No");
     let lbl3 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
     let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="yes" style="--background: --success" label="${lbl}"></juel-button><juel-button id="no" style="--background: --danger" label="${lbl2}"></juel-button><juel-button id="cancel" label="${lbl3}"></juel-button></div>`);
-    content.find("#yes").on("button-clicked", ()=>{
+    let yesClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
             value: args.value
         });
         msgBox.remove();
-    });
+    };
+    let cancelClick = ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel,
+            value: args.value
+        });
+        msgBox.remove();
+    };
+    content.find("#yes").on("button-clicked", yesClick);
     content.find("#no").on("button-clicked", ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No
         });
         msgBox.remove();
     });
-    content.find("#cancel").on("button-clicked", ()=>{
-        resolve({
-            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
-        });
-        msgBox.remove();
-    });
+    content.find("#cancel").on("button-clicked", cancelClick);
     msgBox.find("#dialog-body").append(content);
 };
 $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.RetryCancel] = function(args, msgBox, resolve, reject) {
     let lbl = $76dc545112fbba8b$var$GetLabel(args, "retry", "Retry");
     let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
     let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="retry" style="--background: --success" label="${lbl}"></juel-button><juel-button id="cancel" label="${lbl2}"></juel-button></div>`);
-    content.find("#retry").on("button-clicked", ()=>{
+    let retryClick = ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
             value: args.value
         });
         msgBox.remove();
-    });
-    content.find("#cancel").on("button-clicked", ()=>{
+    };
+    let cancelClick = ()=>{
         resolve({
-            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel,
+            value: args.value
         });
         msgBox.remove();
-    });
+    };
+    content.find("#retry").on("button-clicked", retryClick);
+    content.find("#cancel").on("button-clicked", cancelClick);
     msgBox.find("#dialog-body").append(content);
 };
 $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5a0577a87bc.AbortRetryIgnore] = function(args, msgBox, resolve, reject) {
@@ -78302,25 +78498,28 @@ $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5
     let lbl2 = $76dc545112fbba8b$var$GetLabel(args, "retry", "Retry");
     let lbl3 = $76dc545112fbba8b$var$GetLabel(args, "cancel", "Cancel");
     let content = $(`<div style="flex-basis: 100%;padding: .25rem;"><juel-button id="abort" style="--background: --danger" label="${lbl}"></juel-button><juel-button id="retry" style="--background: --success" label="${lbl2}"></juel-button><juel-button id="cancel" label="${lbl3}"></juel-button></div>`);
+    let retryClick = ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
+            value: args.value
+        });
+        msgBox.remove();
+    };
+    let cancelClick = ()=>{
+        resolve({
+            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel,
+            value: args.value
+        });
+        msgBox.remove();
+    };
     content.find("#abort").on("button-clicked", ()=>{
         resolve({
             status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.No
         });
         msgBox.remove();
     });
-    content.find("#retry").on("button-clicked", ()=>{
-        resolve({
-            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Yes,
-            value: args.value
-        });
-        msgBox.remove();
-    });
-    content.find("#cancel").on("button-clicked", ()=>{
-        resolve({
-            status: $0c8219fe04bc4eff$export$20eb82256d49b3ef.Cancel
-        });
-        msgBox.remove();
-    });
+    content.find("#retry").on("button-clicked", retryClick);
+    content.find("#cancel").on("button-clicked", cancelClick);
     msgBox.find("#dialog-body").append(content);
 };
 var $76dc545112fbba8b$export$2e2bcd8739ae039 = $76dc545112fbba8b$var$MessageBoxButtonStrategies;
@@ -78468,16 +78667,20 @@ $fadf5cc266d19197$var$MessageBoxInputStrategies["markdown"] = (args, msgBox)=>{
 var $fadf5cc266d19197$export$2e2bcd8739ae039 = $fadf5cc266d19197$var$MessageBoxInputStrategies;
 
 
+var $6d0bf1ac44d2a785$exports = {};
+$6d0bf1ac44d2a785$exports = "#overlay {\n  position: fixed;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 100%;\n  height: 100%;\n  top: 0px;\n  left: 0px;\n  pointer-events: none;\n  z-index: 101;\n  background-color: #3a474d;\n}\n#dialog {\n  max-height: 100%;\n  display: flex;\n  flex-direction: column;\n  position: absolute;\n  pointer-events: all;\n  z-index: 101;\n  overflow: hidden;\n  background-color: #ffffff;\n  box-shadow: rgba(0, 0, 0, 0.22) 0px 22px 64px 0px;\n  border-radius: 4px;\n}\n#dialog-title {\n  background-color: rgba(243, 245, 247, 0.56);\n  padding: 0.6875rem 1.25rem;\n  font-size: 1.25rem;\n  line-height: 1.875rem;\n  border-bottom: none;\n}\n#dialog-title .close {\n  float: right;\n  background-image: var(--icon-close);\n  width: 26px;\n  height: 26px;\n  margin-top: 3%;\n  background-repeat: no-repeat;\n  background-position: center center;\n}\n#dialog-body,\n#dialog-body > form {\n  padding: 1.25rem;\n  display: flex;\n  flex-wrap: wrap;\n}\n#dialog-body svg,\n#dialog-body > form svg {\n  max-width: 64px;\n  max-height: 64px;\n}\n\n";
+
+
 let $78438401b0f21ede$var$MessageBoxModule;
 (function(MessageBoxModule) {
     MessageBoxModule.show = (args)=>{
         return new Promise((resolve, reject)=>{
-            let msgBox = $(`<div id="overlay" style="position: fixed;display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;top: 0px;left: 0px;pointer-events: none;z-index: 101;background-color: rgb(58, 71, 77);">
-        <div style="max-height: 100%;display: flex;flex-direction: column;position: absolute;pointer-events: all;z-index: 101;overflow: hidden;background-color: rgb(255, 255, 255);box-shadow: rgb(0 0 0 / 22%) 0px 22px 64px 0px;border-radius: 4px;">
-        <div id="dialog-title" style="background-color: rgba(243, 245, 247, 0.56);padding: 0.6875rem 1.25rem;font-size: 1.25rem;line-height: 1.875rem;border-bottom: none;">
+            let msgBox = $(`<style>${(/*@__PURE__*/$parcel$interopDefault($6d0bf1ac44d2a785$exports))}</style><div id="overlay">
+        <div id="dialog">
+        <div id="dialog-title">
         <span>${args.title}</span>
         </div>
-        <div id="dialog-body" style="padding: 1.25rem;display: flex;flex-wrap: wrap;">
+        <div id="dialog-body">
         ${args.text ? `<p>${args.text}</p>` : ``}
         </div>
         </div>
@@ -78494,7 +78697,7 @@ let $78438401b0f21ede$var$MessageBoxModule;
                 if (args.buttons in $76dc545112fbba8b$export$2e2bcd8739ae039) $76dc545112fbba8b$export$2e2bcd8739ae039[args.buttons](args, msgBox, resolve, reject);
             } else $76dc545112fbba8b$export$2e2bcd8739ae039[$5b10c86278968c18$export$43aeb5a0577a87bc.OK](args, msgBox, resolve, reject);
             if (args.close && args.close == true) {
-                let closeBtn = $(`<div class="close" style="float: right;background-image: var(--icon-close);width: 26px;height: 26px;margin-top: 3%;background-repeat: no-repeat;background-position: center center;"></div>`);
+                let closeBtn = $(`<div class="close"></div>`);
                 closeBtn.on("click", ()=>{
                     msgBox.remove();
                     resolve(0);
