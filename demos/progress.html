@@ -15,6 +15,7 @@
         var pro = document.getElementById("progress");
         setInterval(() => {
             pro.value+=10;
+            pro.requestUpdate();
         }, 500);
     </script>
 </body>
