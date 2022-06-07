@@ -78622,7 +78622,7 @@ $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5
     };
     $(okBtn).on("button-clicked keyup", okClick);
     msgBox.find('#dialog').on('keyup', (e)=>{
-        if (e.key == "Enter") okClick();
+        if (args.okOnEnter == true && e.key == "Enter") okClick();
     });
     msgBox.find("#dialog-body").append(okBtn);
 };
@@ -78644,7 +78644,7 @@ $76dc545112fbba8b$var$MessageBoxButtonStrategies[$5b10c86278968c18$export$43aeb5
         msgBox.remove();
     };
     msgBox.find('#dialog').on('keyup', (e)=>{
-        if (e.key == "Enter") okClick();
+        if (args.okOnEnter == true && e.key == "Enter") okClick();
         else if (e.key == "Escape") cancelClick();
     });
     content.find("#ok").on("button-clicked", okClick);
@@ -78929,11 +78929,13 @@ let $78438401b0f21ede$var$MessageBoxModule;
         </div>
         </div>
         </div>`);
+            if (!('okOnEnter' in args)) args.okOnEnter = true;
             if ('icon' in args) {
                 if (args.icon in $77e33917445718dc$export$2e2bcd8739ae039) $77e33917445718dc$export$2e2bcd8739ae039[args.icon](args, msgBox);
             }
             if ('prompt' in args) {
                 if (args.prompt == "color") args.prompt = "colour";
+                else if (args.prompt == "markdown") args.okOnEnter = false;
                 if (args.prompt in $fadf5cc266d19197$export$2e2bcd8739ae039) $fadf5cc266d19197$export$2e2bcd8739ae039[args.prompt](args, msgBox);
             }
             if ('buttons' in args) // TODO: If object
