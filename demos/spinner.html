@@ -17,11 +17,12 @@
     I think this spinner should be kept and renamed something else and a new more traditional spinner created?
     <div class="container">
         <juel-spinner min="1" max="10" step=".5"></juel-spinner>
-        <juel-spinner min="1" max="10" step=".5"></juel-spinner>
+        <juel-spinner></juel-spinner>
     </div>
     <script>
-        document.getElementsByTagName("juel-spinner")[1]
-           .items = [ 'Bill', 'Ted', 'Brian', 'Steve']
+        var spin = document.getElementsByTagName("juel-spinner")[1];
+        spin.items = [ 'Bill', 'Ted', 'Brian', 'Steve']
+        spin.requestUpdate();
         </script>
 </body>
 
