@@ -6,7 +6,9 @@
         <br/>
         Might also need to make more examples to check functionality of editors and others are working okay.
         <br/>
-        Some of the functionality not working is to do with updates, when we set a property, Lit does not always update, so <a target="_blank" href="https://lit.dev/docs/api/LitElement/#LitElement/updates">requestUpdate</a> may need to be called manually
+        Some of the functionality not working is to do with updates, when we set a property, Lit does not always update, so <a target="_blank" href="https://lit.dev/docs/api/LitElement/#LitElement/updates">requestUpdate</a> may need to be called manually/
+        <hr/>
+        I have just found <a target="_blank" href="https://lit.dev/docs/components/properties/#avoiding-issues-with-class-fields">this in the docs</a> that explains it, set useDefineForClassFields to false in tsconfig.
         </a>
         <ul>
             <li><strong>Layout</strong>
