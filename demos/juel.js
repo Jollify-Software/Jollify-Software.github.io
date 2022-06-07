@@ -52656,6 +52656,385 @@ let $eeb209a94ffda472$export$ef9b1a59e592288f = _class1 = _dec3((_class1 = (_cla
 
 
 
+
+
+
+
+
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const { H: $874d526a9d971de5$var$i  } = $92fc1a28ab06907c$export$8613d1ca9052b22e, $874d526a9d971de5$export$c3825b437cbdea5c = (o)=>null === o || "object" != typeof o && "function" != typeof o
+, $874d526a9d971de5$export$80c36ae3cab9881d = {
+    HTML: 1,
+    SVG: 2
+}, $874d526a9d971de5$export$6b6d145ec2a44ca9 = (o, i)=>{
+    var $874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$80c36ae3cab9881d;
+    return void 0 === i ? void 0 !== (null === ($874d526a9d971de5$export$c3825b437cbdea5c = o) || void 0 === $874d526a9d971de5$export$c3825b437cbdea5c ? void 0 : $874d526a9d971de5$export$c3825b437cbdea5c._$litType$) : (null === ($874d526a9d971de5$export$80c36ae3cab9881d = o) || void 0 === $874d526a9d971de5$export$80c36ae3cab9881d ? void 0 : $874d526a9d971de5$export$80c36ae3cab9881d._$litType$) === i;
+}, $874d526a9d971de5$export$2f448fec17d50a3e = (o)=>{
+    var i;
+    return void 0 !== (null === (i = o) || void 0 === i ? void 0 : i._$litDirective$);
+}, $874d526a9d971de5$export$f28e31de6a6eaf32 = (o)=>{
+    var i;
+    return null === (i = o) || void 0 === i ? void 0 : i._$litDirective$;
+}, $874d526a9d971de5$export$7f431ad0fff82fd9 = (o)=>void 0 === o.strings
+, $874d526a9d971de5$var$e = ()=>document.createComment("")
+, $874d526a9d971de5$export$291b2338ad9b0b30 = (o, $874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$80c36ae3cab9881d)=>{
+    var $874d526a9d971de5$export$6b6d145ec2a44ca9;
+    const $874d526a9d971de5$export$2f448fec17d50a3e = o._$AA.parentNode, $874d526a9d971de5$export$f28e31de6a6eaf32 = void 0 === $874d526a9d971de5$export$c3825b437cbdea5c ? o._$AB : $874d526a9d971de5$export$c3825b437cbdea5c._$AA;
+    if (void 0 === $874d526a9d971de5$export$80c36ae3cab9881d) {
+        const $874d526a9d971de5$export$c3825b437cbdea5c = $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore($874d526a9d971de5$var$e(), $874d526a9d971de5$export$f28e31de6a6eaf32), $874d526a9d971de5$export$6b6d145ec2a44ca9 = $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore($874d526a9d971de5$var$e(), $874d526a9d971de5$export$f28e31de6a6eaf32);
+        $874d526a9d971de5$export$80c36ae3cab9881d = new $874d526a9d971de5$var$i($874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$6b6d145ec2a44ca9, o, o.options);
+    } else {
+        const i = $874d526a9d971de5$export$80c36ae3cab9881d._$AB.nextSibling, $874d526a9d971de5$export$c3825b437cbdea5c = $874d526a9d971de5$export$80c36ae3cab9881d._$AM, $874d526a9d971de5$export$7f431ad0fff82fd9 = $874d526a9d971de5$export$c3825b437cbdea5c !== o;
+        if ($874d526a9d971de5$export$7f431ad0fff82fd9) {
+            let i;
+            null === ($874d526a9d971de5$export$6b6d145ec2a44ca9 = $874d526a9d971de5$export$80c36ae3cab9881d._$AQ) || void 0 === $874d526a9d971de5$export$6b6d145ec2a44ca9 || $874d526a9d971de5$export$6b6d145ec2a44ca9.call($874d526a9d971de5$export$80c36ae3cab9881d, o), $874d526a9d971de5$export$80c36ae3cab9881d._$AM = o, void 0 !== $874d526a9d971de5$export$80c36ae3cab9881d._$AP && (i = o._$AU) !== $874d526a9d971de5$export$c3825b437cbdea5c._$AU && $874d526a9d971de5$export$80c36ae3cab9881d._$AP(i);
+        }
+        if (i !== $874d526a9d971de5$export$f28e31de6a6eaf32 || $874d526a9d971de5$export$7f431ad0fff82fd9) {
+            let o = $874d526a9d971de5$export$80c36ae3cab9881d._$AA;
+            for(; o !== i;){
+                const i = o.nextSibling;
+                $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore(o, $874d526a9d971de5$export$f28e31de6a6eaf32), o = i;
+            }
+        }
+    }
+    return $874d526a9d971de5$export$80c36ae3cab9881d;
+}, $874d526a9d971de5$export$cb8bf9562088e9f4 = (o, i, $874d526a9d971de5$export$c3825b437cbdea5c = o)=>(o._$AI(i, $874d526a9d971de5$export$c3825b437cbdea5c), o)
+, $874d526a9d971de5$var$f = {
+}, $874d526a9d971de5$export$ea70d9dd5965b1c8 = (o, i = $874d526a9d971de5$var$f)=>o._$AH = i
+, $874d526a9d971de5$export$59e9bce518cde500 = (o)=>o._$AH
+, $874d526a9d971de5$export$3133b3144bbba267 = (o)=>{
+    var i;
+    null === (i = o._$AP) || void 0 === i || i.call(o, !1, !0);
+    let $874d526a9d971de5$export$c3825b437cbdea5c = o._$AA;
+    const $874d526a9d971de5$export$80c36ae3cab9881d = o._$AB.nextSibling;
+    for(; $874d526a9d971de5$export$c3825b437cbdea5c !== $874d526a9d971de5$export$80c36ae3cab9881d;){
+        const o = $874d526a9d971de5$export$c3825b437cbdea5c.nextSibling;
+        $874d526a9d971de5$export$c3825b437cbdea5c.remove(), $874d526a9d971de5$export$c3825b437cbdea5c = o;
+    }
+}, $874d526a9d971de5$export$7f600b8138c094dc = (o)=>{
+    o._$AR();
+};
+
+
+
+
+/**
+ * @license
+ * Copyright 2017 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const $6fa4203295149a94$var$e = (i, t)=>{
+    var s, o;
+    const n = i._$AN;
+    if (void 0 === n) return !1;
+    for (const i1 of n)null === (o = (s = i1)._$AO) || void 0 === o || o.call(s, t, !1), $6fa4203295149a94$var$e(i1, t);
+    return !0;
+}, $6fa4203295149a94$var$o = (i)=>{
+    let t, s;
+    do {
+        if (void 0 === (t = i._$AM)) break;
+        s = t._$AN, s.delete(i), i = t;
+    }while (0 === (null == s ? void 0 : s.size))
+}, $6fa4203295149a94$var$n = (i)=>{
+    for(let t; t = i._$AM; i = t){
+        let s = t._$AN;
+        if (void 0 === s) t._$AN = s = new Set;
+        else if (s.has(i)) break;
+        s.add(i), $6fa4203295149a94$var$l(t);
+    }
+};
+function $6fa4203295149a94$var$r(i) {
+    void 0 !== this._$AN ? ($6fa4203295149a94$var$o(this), this._$AM = i, $6fa4203295149a94$var$n(this)) : this._$AM = i;
+}
+function $6fa4203295149a94$var$h(i, t = !1, s = 0) {
+    const n = this._$AH, r = this._$AN;
+    if (void 0 !== r && 0 !== r.size) {
+        if (t) {
+            if (Array.isArray(n)) for(let i = s; i < n.length; i++)$6fa4203295149a94$var$e(n[i], !1), $6fa4203295149a94$var$o(n[i]);
+            else null != n && ($6fa4203295149a94$var$e(n, !1), $6fa4203295149a94$var$o(n));
+        } else $6fa4203295149a94$var$e(this, i);
+    }
+}
+const $6fa4203295149a94$var$l = (i)=>{
+    var t, e, o, n;
+    i.type == $b51c4a33c90902d9$export$9ba3b3f20a85bfa.CHILD && (null !== (t = (o = i)._$AP) && void 0 !== t || (o._$AP = $6fa4203295149a94$var$h), null !== (e = (n = i)._$AQ) && void 0 !== e || (n._$AQ = $6fa4203295149a94$var$r));
+};
+class $6fa4203295149a94$export$7d025501802325e extends $b51c4a33c90902d9$export$befdefbdce210f91 {
+    constructor(){
+        super(...arguments), this._$AN = void 0;
+    }
+    _$AT(i, t, s) {
+        super._$AT(i, t, s), $6fa4203295149a94$var$n(this), this.isConnected = i._$AU;
+    }
+    _$AO(i, t = !0) {
+        var s, n;
+        i !== this.isConnected && (this.isConnected = i, i ? null === (s = this.reconnected) || void 0 === s || s.call(this) : null === (n = this.disconnected) || void 0 === n || n.call(this)), t && ($6fa4203295149a94$var$e(this, i), $6fa4203295149a94$var$o(this));
+    }
+    setValue(t) {
+        if ($874d526a9d971de5$export$7f431ad0fff82fd9(this._$Ct)) this._$Ct._$AI(t, this);
+        else {
+            const i = [
+                ...this._$Ct._$AH
+            ];
+            i[this._$Ci] = t, this._$Ct._$AI(i, this, 0);
+        }
+    }
+    disconnected() {
+    }
+    reconnected() {
+    }
+}
+
+
+
+/**
+ * @license
+ * Copyright 2020 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const $320ee408841dc6c9$export$7d1e3a5e95ceca43 = ()=>new $320ee408841dc6c9$var$o
+;
+class $320ee408841dc6c9$var$o {
+}
+const $320ee408841dc6c9$var$h = new WeakMap, $320ee408841dc6c9$export$eff4d24c3ff7876e = $b51c4a33c90902d9$export$99b43ad1ed32e735(class extends $6fa4203295149a94$export$7d025501802325e {
+    render(i) {
+        return $92fc1a28ab06907c$export$45b790e32b2810ee;
+    }
+    update(i, [s]) {
+        var $320ee408841dc6c9$export$7d1e3a5e95ceca43;
+        const o = s !== this.U;
+        return o && void 0 !== this.U && this.ot(void 0), (o || this.rt !== this.lt) && (this.U = s, this.ht = null === ($320ee408841dc6c9$export$7d1e3a5e95ceca43 = i.options) || void 0 === $320ee408841dc6c9$export$7d1e3a5e95ceca43 ? void 0 : $320ee408841dc6c9$export$7d1e3a5e95ceca43.host, this.ot(this.lt = i.element)), $92fc1a28ab06907c$export$45b790e32b2810ee;
+    }
+    ot(t) {
+        "function" == typeof this.U ? (void 0 !== $320ee408841dc6c9$var$h.get(this.U) && this.U.call(this.ht, void 0), $320ee408841dc6c9$var$h.set(this.U, t), void 0 !== t && this.U.call(this.ht, t)) : this.U.value = t;
+    }
+    get rt() {
+        var t;
+        return "function" == typeof this.U ? $320ee408841dc6c9$var$h.get(this.U) : null === (t = this.U) || void 0 === t ? void 0 : t.value;
+    }
+    disconnected() {
+        this.rt === this.lt && this.ot(void 0);
+    }
+    reconnected() {
+        this.ot(this.lt);
+    }
+});
+
+
+
+
+var _class, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3;
+let $3ea724c4e9544bc1$export$36eab7f492831059 = (_class = class $3ea724c4e9544bc1$export$36eab7f492831059 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
+    firstUpdated() {
+        if (this.input.value) this.input.value.focus();
+    }
+    focus(options) {
+        if (this.input.value) this.input.value.focus();
+        super.focus(options);
+    }
+    onClick(e) {
+    }
+    toggleDropdown() {
+        var items = this.shadowRoot.querySelector('#dropdown-items');
+        if (this.dropdownShown == false) {
+            this.dropdown = $601bfbe01c893ba9$export$8f7491d57c8f97a9(this.shadowRoot.querySelector('#dropdown-toggle'), items);
+            items.style.display = "initial";
+            this.dropdownShown = true;
+        } else {
+            this.dropdown.destroy();
+            items.style.display = "none";
+            this.dropdownShown = false;
+        }
+    }
+    constructor(...args){
+        super(...args);
+        this.input = $320ee408841dc6c9$export$7d1e3a5e95ceca43();
+        this.dropdownShown = false;
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "addon", _descriptor, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "addonActive", _descriptor1, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "label", _descriptor2, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "active", _descriptor3, this);
+    }
+}, _dec = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Boolean
+}), _dec2 = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec3 = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Boolean
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "addon", [
+    _dec
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "addonActive", [
+    _dec1
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "label", [
+    _dec2
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "active", [
+    _dec3
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _class);
+
+
+
+/**
+ * @license
+ * Copyright 2021 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ function $954da00336ecb470$export$a55877ca9db47377($954da00336ecb470$export$a55877ca9db47377, o, r) {
+    return $954da00336ecb470$export$a55877ca9db47377 ? o() : null == r ? void 0 : r();
+}
+
+
+
+
+
+function $1e413f9fc33c89e6$export$e2c86a3545f3ce2b(el) {
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<button part="button" class="btn" part="button" @click="${el.onClick}"><slot name="content">${el.label}</slot></button>`;
+}
+
+
+let $b304b388a6882281$export$930c13e962764648;
+(function($b304b388a6882281$export$930c13e962764648) {
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Button"] = 0] = "Button";
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Text"] = 1] = "Text";
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Memo"] = 2] = "Memo";
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Number"] = 3] = "Number";
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Range"] = 4] = "Range";
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Tickbox"] = 5] = "Tickbox";
+    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Radio"] = 6] = "Radio";
+})($b304b388a6882281$export$930c13e962764648 || ($b304b388a6882281$export$930c13e962764648 = {
+}));
+
+
+
+
+/**
+ * @license
+ * Copyright 2018 Google LLC
+ * SPDX-License-Identifier: BSD-3-Clause
+ */ const $969213c2a2450f90$export$f68dd208b5df064d = ($969213c2a2450f90$export$f68dd208b5df064d)=>null != $969213c2a2450f90$export$f68dd208b5df064d ? $969213c2a2450f90$export$f68dd208b5df064d : $92fc1a28ab06907c$export$45b790e32b2810ee
+;
+
+
+
+
+
+function $5f7bb4adc4a2cfa9$export$43c51f51f0b06995(el) {
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} id="input" type="range" .value=${$969213c2a2450f90$export$f68dd208b5df064d(el.value)} min="${$969213c2a2450f90$export$f68dd208b5df064d(el.min)}" max="${$969213c2a2450f90$export$f68dd208b5df064d(el.max)}" step="${$969213c2a2450f90$export$f68dd208b5df064d(el.step)}" @change="${el.onChange}">`;
+}
+
+
+
+
+function $5e09076ad5059077$export$554cf187947ae74d(el) {
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label part="label" for="text"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} part="input" .value="${el.value}" class="text" @change="${el.onChange}">`;
+}
+
+
+
+
+function $444bd713984e1b8e$export$85d8fe04c954eac(el) {
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} type="checkbox" .checked="${el.value}" id="input" @change="${el.onChange}">`;
+}
+
+
+function $406702000fd0643f$export$475a25926aecae05(el, type) {
+    let inputTemplate;
+    switch(type){
+        case $b304b388a6882281$export$930c13e962764648.Button:
+            inputTemplate = $1e413f9fc33c89e6$export$e2c86a3545f3ce2b;
+            break;
+        case $b304b388a6882281$export$930c13e962764648.Text:
+            inputTemplate = $5e09076ad5059077$export$554cf187947ae74d;
+            break;
+        case $b304b388a6882281$export$930c13e962764648.Range:
+            inputTemplate = $5f7bb4adc4a2cfa9$export$43c51f51f0b06995;
+            break;
+        case $b304b388a6882281$export$930c13e962764648.Tickbox:
+            inputTemplate = $444bd713984e1b8e$export$85d8fe04c954eac;
+            break;
+        default:
+            break;
+    }
+    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`${$954da00336ecb470$export$a55877ca9db47377(el.addon, ()=>$92fc1a28ab06907c$export$c0bb0b647f701bb5`<div part="input-group" class="input-group">
+                    ${inputTemplate(el)}
+                    ${el.addon && el.addon == "dropdown" ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<button id="dropdown-toggle" @click="${el.toggleDropdown}"></button>` : $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div class="addon"><slot name="addon"></slot></div>`}
+                    ${el.active == true && el.addon && el.addonActive == true ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div class="addon"><slot name="addon-active"></slot></div>` : ``}
+                </div>`
+    , ()=>inputTemplate(el)
+    )}
+                ${el.addon && el.addon == "dropdown" ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div id="dropdown-items" style="display:none"><slot name="dropdown"></slot></div>` : $92fc1a28ab06907c$export$c0bb0b647f701bb5``}`;
+}
+
+
+
+var $dfa97771558da404$exports = {};
+$dfa97771558da404$exports = ":host {\n  display: inline-block;\n}\ninput.text {\n  width: 100%;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n:host {\n  display: flex;\n  align-items: center;\n}\ninput {\n  appearance: none;\n  width: 1em;\n  height: 1em;\n  margin-top: 0.25em;\n  --icon: pink;\n  background-color: var(--primary);\n  border: 1px solid rgba(0, 0, 0, 0.25);\n  border-radius: 0.25em;\n  margin: 2%;\n  position: relative;\n  width: 40px;\n  height: 40px;\n  box-shadow: inset 0 0 12px lightblue;\n}\ninput:checked::before {\n  content: \"\";\n  position: absolute;\n  width: 8px;\n  top: 50%;\n  height: 50%;\n  border-radius: 2px;\n  background-color: #7b2d14;\n  transform: translateX(12px) rotate(-45deg);\n  transform-origin: left bottom;\n  z-index: 1;\n}\ninput:checked::after {\n  content: \"\";\n  position: absolute;\n  bottom: 0;\n  height: 8px;\n  width: 100%;\n  border-radius: 2px;\n  background-color: #c83478;\n  transform: translateX(12px) rotate(-45deg);\n  transform-origin: left bottom;\n}\n\n";
+
+
+
+
+var _class;
+var _class1, _descriptor, _dec;
+var _dec1 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-tickbox");
+let $63119e3983e27036$export$42658d5387a70c43 = _class1 = _dec1((_class1 = (_class = class $63119e3983e27036$export$42658d5387a70c43 extends $3ea724c4e9544bc1$export$36eab7f492831059 {
+    constructor(){
+        super();
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "value", _descriptor, this);
+        this.value = false;
+    }
+    disconnectedCallback() {
+        if (this.isRipple) {
+            let btn = this.shadowRoot.firstElementChild;
+            this.r.removeRipples(btn);
+        }
+    }
+    setValue(value) {
+        this.value = value;
+    }
+    onChange(e) {
+        let el = e.target;
+        this.value = el.checked;
+        let args = {
+            value: this.value
+        };
+        $d0b207410768571b$export$65fee5f8f91a342f(this, $511fb495e7bef568$export$3fd36d65bf762270.Changed, args);
+    }
+    render() {
+        return $406702000fd0643f$export$475a25926aecae05(this, $b304b388a6882281$export$930c13e962764648.Tickbox);
+    }
+}, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($dfa97771558da404$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Boolean
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "value", [
+    _dec
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _class1)) || _class1;
+
+
+
+
+
 var $71360f301456d8f8$exports = {};
 $71360f301456d8f8$exports = ":host {\n  overflow-x: hidden;\n  overflow-y: auto;\n  display: flex;\n  transition: width 0.8s, height 0.8s;\n}\n.container {\n  display: inline-flex;\n  align-items: flex-start;\n  width: 100%;\n  height: 100%;\n  transition: margin 0.8s, width 0.8s, height 0.8s;\n}\n#previous {\n  position: absolute;\n  top: 0;\n  left: 0;\n  bottom: 0;\n  z-index: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 10%;\n  padding: 0;\n  color: #fff;\n  text-align: center;\n  background: 0 0;\n  border: 0;\n  opacity: 0.25;\n  transition: opacity 0.15s ease;\n  cursor: pointer;\n  background-color: black;\n}\n#previous span {\n  width: 2rem;\n  height: 2rem;\n  background-image: var(--icon-previous);\n}\n#next {\n  right: 0;\n  position: absolute;\n  top: 0;\n  bottom: 0;\n  z-index: 1;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  width: 10%;\n  padding: 0;\n  color: #fff;\n  text-align: center;\n  background: 0 0;\n  border: 0;\n  opacity: 0.25;\n  transition: opacity 0.15s ease;\n  cursor: pointer;\n  background-color: black;\n}\n#next span {\n  width: 2rem;\n  height: 2rem;\n  background-image: var(--icon-next);\n}\n@media screen and (max-height: 500px) {\n  .item {\n    height: 100%;\n  }\n}\n\n";
 
@@ -55768,336 +56147,233 @@ let $576a5e3126c80c31$export$7dec0544e22d70df = _class1 = _dec5((_class1 = (_cla
 
 
 
-var $973991d1a89aeb6f$exports = {};
-$973991d1a89aeb6f$exports = ":host {\n  display: inline-block;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n\n";
+var $738b73b2de5f3cbf$exports = {};
+$738b73b2de5f3cbf$exports = ".progress-ring__circle {\n  stroke-dasharray: 10 20;\n  stroke: var(--stroke, white);\n  transition: stroke-dashoffset 0s;\n  transform: rotate(-90deg);\n  transform-origin: 50% 50%;\n}\n\n";
 
 
-
-
-
-
-
-
-/**
- * @license
- * Copyright 2020 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */ const { H: $874d526a9d971de5$var$i  } = $92fc1a28ab06907c$export$8613d1ca9052b22e, $874d526a9d971de5$export$c3825b437cbdea5c = (o)=>null === o || "object" != typeof o && "function" != typeof o
-, $874d526a9d971de5$export$80c36ae3cab9881d = {
-    HTML: 1,
-    SVG: 2
-}, $874d526a9d971de5$export$6b6d145ec2a44ca9 = (o, i)=>{
-    var $874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$80c36ae3cab9881d;
-    return void 0 === i ? void 0 !== (null === ($874d526a9d971de5$export$c3825b437cbdea5c = o) || void 0 === $874d526a9d971de5$export$c3825b437cbdea5c ? void 0 : $874d526a9d971de5$export$c3825b437cbdea5c._$litType$) : (null === ($874d526a9d971de5$export$80c36ae3cab9881d = o) || void 0 === $874d526a9d971de5$export$80c36ae3cab9881d ? void 0 : $874d526a9d971de5$export$80c36ae3cab9881d._$litType$) === i;
-}, $874d526a9d971de5$export$2f448fec17d50a3e = (o)=>{
-    var i;
-    return void 0 !== (null === (i = o) || void 0 === i ? void 0 : i._$litDirective$);
-}, $874d526a9d971de5$export$f28e31de6a6eaf32 = (o)=>{
-    var i;
-    return null === (i = o) || void 0 === i ? void 0 : i._$litDirective$;
-}, $874d526a9d971de5$export$7f431ad0fff82fd9 = (o)=>void 0 === o.strings
-, $874d526a9d971de5$var$e = ()=>document.createComment("")
-, $874d526a9d971de5$export$291b2338ad9b0b30 = (o, $874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$80c36ae3cab9881d)=>{
-    var $874d526a9d971de5$export$6b6d145ec2a44ca9;
-    const $874d526a9d971de5$export$2f448fec17d50a3e = o._$AA.parentNode, $874d526a9d971de5$export$f28e31de6a6eaf32 = void 0 === $874d526a9d971de5$export$c3825b437cbdea5c ? o._$AB : $874d526a9d971de5$export$c3825b437cbdea5c._$AA;
-    if (void 0 === $874d526a9d971de5$export$80c36ae3cab9881d) {
-        const $874d526a9d971de5$export$c3825b437cbdea5c = $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore($874d526a9d971de5$var$e(), $874d526a9d971de5$export$f28e31de6a6eaf32), $874d526a9d971de5$export$6b6d145ec2a44ca9 = $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore($874d526a9d971de5$var$e(), $874d526a9d971de5$export$f28e31de6a6eaf32);
-        $874d526a9d971de5$export$80c36ae3cab9881d = new $874d526a9d971de5$var$i($874d526a9d971de5$export$c3825b437cbdea5c, $874d526a9d971de5$export$6b6d145ec2a44ca9, o, o.options);
-    } else {
-        const i = $874d526a9d971de5$export$80c36ae3cab9881d._$AB.nextSibling, $874d526a9d971de5$export$c3825b437cbdea5c = $874d526a9d971de5$export$80c36ae3cab9881d._$AM, $874d526a9d971de5$export$7f431ad0fff82fd9 = $874d526a9d971de5$export$c3825b437cbdea5c !== o;
-        if ($874d526a9d971de5$export$7f431ad0fff82fd9) {
-            let i;
-            null === ($874d526a9d971de5$export$6b6d145ec2a44ca9 = $874d526a9d971de5$export$80c36ae3cab9881d._$AQ) || void 0 === $874d526a9d971de5$export$6b6d145ec2a44ca9 || $874d526a9d971de5$export$6b6d145ec2a44ca9.call($874d526a9d971de5$export$80c36ae3cab9881d, o), $874d526a9d971de5$export$80c36ae3cab9881d._$AM = o, void 0 !== $874d526a9d971de5$export$80c36ae3cab9881d._$AP && (i = o._$AU) !== $874d526a9d971de5$export$c3825b437cbdea5c._$AU && $874d526a9d971de5$export$80c36ae3cab9881d._$AP(i);
-        }
-        if (i !== $874d526a9d971de5$export$f28e31de6a6eaf32 || $874d526a9d971de5$export$7f431ad0fff82fd9) {
-            let o = $874d526a9d971de5$export$80c36ae3cab9881d._$AA;
-            for(; o !== i;){
-                const i = o.nextSibling;
-                $874d526a9d971de5$export$2f448fec17d50a3e.insertBefore(o, $874d526a9d971de5$export$f28e31de6a6eaf32), o = i;
-            }
-        }
-    }
-    return $874d526a9d971de5$export$80c36ae3cab9881d;
-}, $874d526a9d971de5$export$cb8bf9562088e9f4 = (o, i, $874d526a9d971de5$export$c3825b437cbdea5c = o)=>(o._$AI(i, $874d526a9d971de5$export$c3825b437cbdea5c), o)
-, $874d526a9d971de5$var$f = {
-}, $874d526a9d971de5$export$ea70d9dd5965b1c8 = (o, i = $874d526a9d971de5$var$f)=>o._$AH = i
-, $874d526a9d971de5$export$59e9bce518cde500 = (o)=>o._$AH
-, $874d526a9d971de5$export$3133b3144bbba267 = (o)=>{
-    var i;
-    null === (i = o._$AP) || void 0 === i || i.call(o, !1, !0);
-    let $874d526a9d971de5$export$c3825b437cbdea5c = o._$AA;
-    const $874d526a9d971de5$export$80c36ae3cab9881d = o._$AB.nextSibling;
-    for(; $874d526a9d971de5$export$c3825b437cbdea5c !== $874d526a9d971de5$export$80c36ae3cab9881d;){
-        const o = $874d526a9d971de5$export$c3825b437cbdea5c.nextSibling;
-        $874d526a9d971de5$export$c3825b437cbdea5c.remove(), $874d526a9d971de5$export$c3825b437cbdea5c = o;
-    }
-}, $874d526a9d971de5$export$7f600b8138c094dc = (o)=>{
-    o._$AR();
-};
-
-
-
-
-/**
- * @license
- * Copyright 2017 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */ const $6fa4203295149a94$var$e = (i, t)=>{
-    var s, o;
-    const n = i._$AN;
-    if (void 0 === n) return !1;
-    for (const i1 of n)null === (o = (s = i1)._$AO) || void 0 === o || o.call(s, t, !1), $6fa4203295149a94$var$e(i1, t);
-    return !0;
-}, $6fa4203295149a94$var$o = (i)=>{
-    let t, s;
-    do {
-        if (void 0 === (t = i._$AM)) break;
-        s = t._$AN, s.delete(i), i = t;
-    }while (0 === (null == s ? void 0 : s.size))
-}, $6fa4203295149a94$var$n = (i)=>{
-    for(let t; t = i._$AM; i = t){
-        let s = t._$AN;
-        if (void 0 === s) t._$AN = s = new Set;
-        else if (s.has(i)) break;
-        s.add(i), $6fa4203295149a94$var$l(t);
-    }
-};
-function $6fa4203295149a94$var$r(i) {
-    void 0 !== this._$AN ? ($6fa4203295149a94$var$o(this), this._$AM = i, $6fa4203295149a94$var$n(this)) : this._$AM = i;
-}
-function $6fa4203295149a94$var$h(i, t = !1, s = 0) {
-    const n = this._$AH, r = this._$AN;
-    if (void 0 !== r && 0 !== r.size) {
-        if (t) {
-            if (Array.isArray(n)) for(let i = s; i < n.length; i++)$6fa4203295149a94$var$e(n[i], !1), $6fa4203295149a94$var$o(n[i]);
-            else null != n && ($6fa4203295149a94$var$e(n, !1), $6fa4203295149a94$var$o(n));
-        } else $6fa4203295149a94$var$e(this, i);
-    }
-}
-const $6fa4203295149a94$var$l = (i)=>{
-    var t, e, o, n;
-    i.type == $b51c4a33c90902d9$export$9ba3b3f20a85bfa.CHILD && (null !== (t = (o = i)._$AP) && void 0 !== t || (o._$AP = $6fa4203295149a94$var$h), null !== (e = (n = i)._$AQ) && void 0 !== e || (n._$AQ = $6fa4203295149a94$var$r));
-};
-class $6fa4203295149a94$export$7d025501802325e extends $b51c4a33c90902d9$export$befdefbdce210f91 {
+var _class;
+var _class1, _descriptor, _dec, _descriptor1, _dec1;
+var _dec2 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-progress");
+let $c0c70f3bbc6bf9cc$export$b5b86cc426fc60e1 = _class1 = _dec2((_class1 = (_class = class $c0c70f3bbc6bf9cc$export$b5b86cc426fc60e1 extends $130af042b943993c$export$3f2f9f5909897157 {
     constructor(){
-        super(...arguments), this._$AN = void 0;
+        super();
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "type", _descriptor, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "value", _descriptor1, this);
+        this.type = "line";
+        this.value = 0;
     }
-    _$AT(i, t, s) {
-        super._$AT(i, t, s), $6fa4203295149a94$var$n(this), this.isConnected = i._$AU;
+    updated(_changedProperties) {
+        const circle = this.shadowRoot.querySelector('.progress-ring__circle');
+        const radius = circle.r.baseVal.value;
+        const circumference = radius * 2 * Math.PI;
+        circle.style.strokeDasharray = `${circumference} ${circumference}`;
+        circle.style.strokeDashoffset = circumference.toString();
+        const offset = circumference - this.value / 100 * circumference;
+        circle.style.strokeDashoffset = offset.toString();
     }
-    _$AO(i, t = !0) {
-        var s, n;
-        i !== this.isConnected && (this.isConnected = i, i ? null === (s = this.reconnected) || void 0 === s || s.call(this) : null === (n = this.disconnected) || void 0 === n || n.call(this)), t && ($6fa4203295149a94$var$e(this, i), $6fa4203295149a94$var$o(this));
+    render() {
+        return $92fc1a28ab06907c$export$c0bb0b647f701bb5`${this.type == "ring" ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`
+            <svg class="progress-ring" height="120" width="120">
+                <circle class="progress-ring__circle" stroke-width="1" fill="transparent" r="58" cx="60" cy="60"/>
+            </svg>` : ``}`;
     }
-    setValue(t) {
-        if ($874d526a9d971de5$export$7f431ad0fff82fd9(this._$Ct)) this._$Ct._$AI(t, this);
-        else {
-            const i = [
-                ...this._$Ct._$AH
-            ];
-            i[this._$Ci] = t, this._$Ct._$AI(i, this, 0);
-        }
-    }
-    disconnected() {
-    }
-    reconnected() {
-    }
-}
-
-
-
-/**
- * @license
- * Copyright 2020 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */ const $320ee408841dc6c9$export$7d1e3a5e95ceca43 = ()=>new $320ee408841dc6c9$var$o
-;
-class $320ee408841dc6c9$var$o {
-}
-const $320ee408841dc6c9$var$h = new WeakMap, $320ee408841dc6c9$export$eff4d24c3ff7876e = $b51c4a33c90902d9$export$99b43ad1ed32e735(class extends $6fa4203295149a94$export$7d025501802325e {
-    render(i) {
-        return $92fc1a28ab06907c$export$45b790e32b2810ee;
-    }
-    update(i, [s]) {
-        var $320ee408841dc6c9$export$7d1e3a5e95ceca43;
-        const o = s !== this.U;
-        return o && void 0 !== this.U && this.ot(void 0), (o || this.rt !== this.lt) && (this.U = s, this.ht = null === ($320ee408841dc6c9$export$7d1e3a5e95ceca43 = i.options) || void 0 === $320ee408841dc6c9$export$7d1e3a5e95ceca43 ? void 0 : $320ee408841dc6c9$export$7d1e3a5e95ceca43.host, this.ot(this.lt = i.element)), $92fc1a28ab06907c$export$45b790e32b2810ee;
-    }
-    ot(t) {
-        "function" == typeof this.U ? (void 0 !== $320ee408841dc6c9$var$h.get(this.U) && this.U.call(this.ht, void 0), $320ee408841dc6c9$var$h.set(this.U, t), void 0 !== t && this.U.call(this.ht, t)) : this.U.value = t;
-    }
-    get rt() {
-        var t;
-        return "function" == typeof this.U ? $320ee408841dc6c9$var$h.get(this.U) : null === (t = this.U) || void 0 === t ? void 0 : t.value;
-    }
-    disconnected() {
-        this.rt === this.lt && this.ot(void 0);
-    }
-    reconnected() {
-        this.ot(this.lt);
-    }
-});
-
-
-
-
-var _class, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3;
-let $3ea724c4e9544bc1$export$36eab7f492831059 = (_class = class $3ea724c4e9544bc1$export$36eab7f492831059 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
-    firstUpdated() {
-        if (this.input.value) this.input.value.focus();
-    }
-    focus(options) {
-        if (this.input.value) this.input.value.focus();
-        super.focus(options);
-    }
-    onClick(e) {
-    }
-    toggleDropdown() {
-        var items = this.shadowRoot.querySelector('#dropdown-items');
-        if (this.dropdownShown == false) {
-            this.dropdown = $601bfbe01c893ba9$export$8f7491d57c8f97a9(this.shadowRoot.querySelector('#dropdown-toggle'), items);
-            items.style.display = "initial";
-            this.dropdownShown = true;
-        } else {
-            this.dropdown.destroy();
-            items.style.display = "none";
-            this.dropdownShown = false;
-        }
-    }
-    constructor(...args){
-        super(...args);
-        this.input = $320ee408841dc6c9$export$7d1e3a5e95ceca43();
-        this.dropdownShown = false;
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "addon", _descriptor, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "addonActive", _descriptor1, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "label", _descriptor2, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "active", _descriptor3, this);
-    }
-}, _dec = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494({
-    type: Boolean
-}), _dec2 = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec3 = $dd96f25eb320c952$export$d541bacb2bda4494({
-    type: Boolean
-}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "addon", [
+}, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($738b73b2de5f3cbf$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Number
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "type", [
     _dec
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "addonActive", [
+}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "value", [
     _dec1
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "label", [
+}), _class1)) || _class1;
+
+
+
+
+
+var $34a82419dfaa2581$exports = {};
+$34a82419dfaa2581$exports = ".fixed {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n.loading {\n  background-color: #f7f7f7;\n  width: 100%;\n  height: 100%;\n  display: flex;\n  z-index: 100;\n  transition: 0.6s;\n  align-items: center;\n  justify-content: center;\n}\n.loading img {\n  height: 80px;\n  position: absolute;\n  z-index: 101;\n}\n.loading .circle {\n  background-color: #0061f2;\n  width: 100px;\n  height: 100px;\n  position: relative;\n  border-style: solid;\n  border-width: 4px;\n  border-top-color: gold;\n  border-bottom-color: transparent;\n  border-left-color: transparent;\n  border-right-color: transparent;\n  border-radius: 50%;\n  box-shadow: 4px 1px 5px 2px rgba(25, 200, 206, 0.15);\n  animation: zoom 2000ms infinite ease;\n  transition: 0.6s;\n}\n.hidden {\n  visibility: hidden;\n  opacity: 0;\n  transition: visibility 0s 2s, opacity 2s linear;\n}\n@keyframes zoom {\n  0% {\n    -webkit-transform: rotate(0deg);\n    transform: rotate(0deg);\n    -webkit-transition: 0.6s;\n    -o-transition: 0.6s;\n    transition: 0.6s;\n  }\n  100% {\n    -webkit-transform: rotate(360deg);\n    transform: rotate(360deg);\n    -webkit-transition: 0.6s;\n    -o-transition: 0.6s;\n    transition: 0.6s;\n  }\n}\n\n";
+
+
+var _class;
+var _class1, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2;
+var _dec3 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-loading");
+let $2a95ff58f1d59a5f$export$41eae17f34af2d67 = _class1 = _dec3((_class1 = (_class = class $2a95ff58f1d59a5f$export$41eae17f34af2d67 extends $130af042b943993c$export$3f2f9f5909897157 {
+    render() {
+        let c = "loading";
+        if (this.screen == true) c += " fixed";
+        if (this.visible == false) c += " hidden";
+        return $92fc1a28ab06907c$export$c0bb0b647f701bb5`
+        <div class="${c}">
+            <div class="circle"></div>
+            ${this.src ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<img src="${this.src}" alt="">` : ``}
+        </div>`;
+    }
+    constructor(...args){
+        super(...args);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "src", _descriptor, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "visible", _descriptor1, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "screen", _descriptor2, this);
+    }
+}, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($34a82419dfaa2581$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Boolean
+}), _dec2 = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Boolean
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "src", [
+    _dec
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "visible", [
+    _dec1
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "screen", [
     _dec2
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "active", [
+}), _class1)) || _class1;
+
+
+
+
+
+
+
+var $e71902c208a7e467$exports = {};
+$e71902c208a7e467$exports = "input[type=range] {\n  -webkit-appearance: none;\n  /* Hides the slider so that custom slider can be made */\n  width: 100%;\n  /* Specific width is required for Firefox. */\n  background: transparent;\n  /* Otherwise white in Chrome */\n}\ninput[type=range]:focus {\n  outline: none;\n  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */\n}\ninput[type=range]:focus::-webkit-slider-runnable-track {\n  background: var(--secondary);\n}\ninput[type=range]:focus::-ms-fill-upper {\n  background: var(--secondary);\n}\ninput[type=range]:focus::-ms-fill-lower {\n  background: var(--secondary);\n}\ninput[type=range]::-ms-track {\n  width: 100%;\n  cursor: pointer;\n  /* Hides the slider so custom styles can be added */\n  background: transparent;\n  border-color: transparent;\n  color: transparent;\n}\ninput[type=range]::-webkit-slider-runnable-track {\n  width: 100%;\n  height: 6px;\n  cursor: pointer;\n  background: var(--active);\n  border-radius: 1.3px;\n  border: 0.2px solid var(--secondary);\n}\ninput[type=range]::-moz-range-track {\n  width: 100%;\n  height: 6px;\n  cursor: pointer;\n  background: var(--active);\n  border-radius: 1.3px;\n  border: 0.2px solid var(--secondary);\n}\ninput[type=range]::-ms-track {\n  width: 100%;\n  height: 6px;\n  cursor: pointer;\n  background: transparent;\n  border-color: transparent;\n  border-width: 16px 0;\n  color: transparent;\n}\ninput[type=range]::-ms-fill-lower {\n  background: var(--active);\n  border: 0.2px solid var(--secondary);\n  border-radius: 2.6px;\n}\ninput[type=range]::-ms-fill-upper {\n  background: var(--active);\n  border: 0.2px solid var(--secondary);\n  border-radius: 2.6px;\n}\ninput[type=range]::-webkit-slider-thumb {\n  -webkit-appearance: none;\n  height: 24px;\n  width: 24px;\n  border-radius: 50px;\n  background: var(--primary);\n  cursor: pointer;\n  margin-top: -11px;\n  /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */\n}\ninput[type=range]::-moz-range-thumb {\n  height: 24px;\n  width: 24px;\n  border-radius: 50px;\n  background: var(--primary);\n  cursor: pointer;\n}\ninput[type=range]::-ms-thumb {\n  height: 24px;\n  width: 24px;\n  border-radius: 50px;\n  background: var(--primary);\n  cursor: pointer;\n}\n\n";
+
+
+
+var $9066b25d33a19f2a$exports = {};
+$9066b25d33a19f2a$exports = "@keyframes ripple {\n  to {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n";
+
+
+class $2eafb92596faae42$export$df83e21cb27a0989 {
+    constructor(element){
+        this.element = element;
+        this.removeRipples = (el)=>{
+            el.removeEventListener('click', this.createRipple.bind(this));
+        };
+        element.addEventListener('click', this.createRipple.bind(this));
+        let root = element.getRootNode();
+        const style = document.createElement("style");
+        style.textContent = (/*@__PURE__*/$parcel$interopDefault($9066b25d33a19f2a$exports));
+        root.prepend(style);
+    }
+    createRipple(event) {
+        const button = this.element;
+        const circle = document.createElement("span");
+        const diameter = Math.max(button.clientWidth, button.clientHeight);
+        const radius = diameter / 2;
+        circle.setAttribute('part', 'ripple');
+        circle.style.width = circle.style.height = `${diameter}px`;
+        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
+        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
+        circle.classList.add("ripple");
+        const ripple = button.getElementsByClassName("ripple")[0];
+        if (ripple) ripple.remove();
+        button.appendChild(circle);
+    }
+}
+
+
+
+
+var _class;
+var _class1, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3;
+var _dec4 = $1be6e24e46c7742d$export$da64fc29f17f9d0e("juel-range");
+let $4c3c962aed402030$export$ec495d047382ba78 = _class1 = _dec4((_class1 = (_class = class $4c3c962aed402030$export$ec495d047382ba78 extends $3ea724c4e9544bc1$export$36eab7f492831059 {
+    updated() {
+        setTimeout(()=>{
+            this.isRipple = getComputedStyle(this).getPropertyValue('--ripple');
+            console.log(this.isRipple);
+            if (this.isRipple) {
+                let btn = this.shadowRoot.firstElementChild;
+                this.r = new $2eafb92596faae42$export$df83e21cb27a0989(btn);
+            }
+        });
+    }
+    disconnectedCallback() {
+        if (this.isRipple) {
+            let btn = this.shadowRoot.firstElementChild;
+            this.r.removeRipples(btn);
+        }
+    }
+    onChange(e) {
+        let el = e.target;
+        this.value = parseFloat(el.value);
+        let args = {
+            value: this.value
+        };
+        $d0b207410768571b$export$65fee5f8f91a342f(this, $511fb495e7bef568$export$3fd36d65bf762270.Changed, args);
+    }
+    render() {
+        return $406702000fd0643f$export$475a25926aecae05(this, $b304b388a6882281$export$930c13e962764648.Range);
+    }
+    constructor(...args){
+        super(...args);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "value", _descriptor, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "min", _descriptor1, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "max", _descriptor2, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "step", _descriptor3, this);
+    }
+}, _class.styles = $f947f71694b09e5c$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($e71902c208a7e467$exports))), _class), _dec = $dd96f25eb320c952$export$d541bacb2bda4494({
+    type: Number
+}), _dec1 = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec2 = $dd96f25eb320c952$export$d541bacb2bda4494(), _dec3 = $dd96f25eb320c952$export$d541bacb2bda4494(), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "value", [
+    _dec
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "min", [
+    _dec1
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "max", [
+    _dec2
+], {
+    configurable: true,
+    enumerable: true,
+    writable: true,
+    initializer: void 0
+}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "step", [
     _dec3
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _class);
-
-
-
-/**
- * @license
- * Copyright 2021 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */ function $954da00336ecb470$export$a55877ca9db47377($954da00336ecb470$export$a55877ca9db47377, o, r) {
-    return $954da00336ecb470$export$a55877ca9db47377 ? o() : null == r ? void 0 : r();
-}
+}), _class1)) || _class1;
 
 
 
 
 
-function $1e413f9fc33c89e6$export$e2c86a3545f3ce2b(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<button part="button" class="btn" part="button" @click="${el.onClick}"><slot name="content">${el.label}</slot></button>`;
-}
+var $973991d1a89aeb6f$exports = {};
+$973991d1a89aeb6f$exports = ":host {\n  display: inline-block;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n\n";
 
 
-let $b304b388a6882281$export$930c13e962764648;
-(function($b304b388a6882281$export$930c13e962764648) {
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Button"] = 0] = "Button";
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Text"] = 1] = "Text";
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Memo"] = 2] = "Memo";
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Number"] = 3] = "Number";
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Range"] = 4] = "Range";
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Tickbox"] = 5] = "Tickbox";
-    $b304b388a6882281$export$930c13e962764648[$b304b388a6882281$export$930c13e962764648["Radio"] = 6] = "Radio";
-})($b304b388a6882281$export$930c13e962764648 || ($b304b388a6882281$export$930c13e962764648 = {
-}));
-
-
-
-
-/**
- * @license
- * Copyright 2018 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */ const $969213c2a2450f90$export$f68dd208b5df064d = ($969213c2a2450f90$export$f68dd208b5df064d)=>null != $969213c2a2450f90$export$f68dd208b5df064d ? $969213c2a2450f90$export$f68dd208b5df064d : $92fc1a28ab06907c$export$45b790e32b2810ee
-;
-
-
-
-
-
-function $5f7bb4adc4a2cfa9$export$43c51f51f0b06995(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} id="input" type="range" .value=${$969213c2a2450f90$export$f68dd208b5df064d(el.value)} min="${$969213c2a2450f90$export$f68dd208b5df064d(el.min)}" max="${$969213c2a2450f90$export$f68dd208b5df064d(el.max)}" step="${$969213c2a2450f90$export$f68dd208b5df064d(el.step)}" @change="${el.onChange}">`;
-}
-
-
-
-
-function $5e09076ad5059077$export$554cf187947ae74d(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label part="label" for="text"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} part="input" .value="${el.value}" class="text" @change="${el.onChange}">`;
-}
-
-
-
-
-function $444bd713984e1b8e$export$85d8fe04c954eac(el) {
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`<label for="input"><slot name="content">${el.label}</slot></label><input ${$320ee408841dc6c9$export$eff4d24c3ff7876e(el.input)} type="checkbox" .checked="${el.value}" id="input" @change="${el.onChange}">`;
-}
-
-
-function $406702000fd0643f$export$475a25926aecae05(el, type) {
-    let inputTemplate;
-    switch(type){
-        case $b304b388a6882281$export$930c13e962764648.Button:
-            inputTemplate = $1e413f9fc33c89e6$export$e2c86a3545f3ce2b;
-            break;
-        case $b304b388a6882281$export$930c13e962764648.Text:
-            inputTemplate = $5e09076ad5059077$export$554cf187947ae74d;
-            break;
-        case $b304b388a6882281$export$930c13e962764648.Range:
-            inputTemplate = $5f7bb4adc4a2cfa9$export$43c51f51f0b06995;
-            break;
-        case $b304b388a6882281$export$930c13e962764648.Tickbox:
-            inputTemplate = $444bd713984e1b8e$export$85d8fe04c954eac;
-            break;
-        default:
-            break;
-    }
-    return $92fc1a28ab06907c$export$c0bb0b647f701bb5`${$954da00336ecb470$export$a55877ca9db47377(el.addon, ()=>$92fc1a28ab06907c$export$c0bb0b647f701bb5`<div part="input-group" class="input-group">
-                    ${inputTemplate(el)}
-                    ${el.addon && el.addon == "dropdown" ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<button id="dropdown-toggle" @click="${el.toggleDropdown}"></button>` : $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div class="addon"><slot name="addon"></slot></div>`}
-                    ${el.active == true && el.addon && el.addonActive == true ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div class="addon"><slot name="addon-active"></slot></div>` : ``}
-                </div>`
-    , ()=>inputTemplate(el)
-    )}
-                ${el.addon && el.addon == "dropdown" ? $92fc1a28ab06907c$export$c0bb0b647f701bb5`<div id="dropdown-items" style="display:none"><slot name="dropdown"></slot></div>` : $92fc1a28ab06907c$export$c0bb0b647f701bb5``}`;
-}
 
 
 
@@ -56145,38 +56421,6 @@ let $5a880220e80390d3$export$fba804f6e4c18126 = _class1 = _dec1((_class1 = (_cla
 var $3292feabd5f16f79$exports = {};
 $3292feabd5f16f79$exports = ":host {\n  display: inline-block;\n}\n.input-group {\n  display: inline-flex;\n  flex-direction: var(--direction, row);\n  align-items: var(--align, flex-start);\n  padding: 0.375rem;\n  border-radius: 0.25rem;\n  background-color: #e9ecef;\n  border: 1px solid #ced4da;\n}\n.input-group :first-child {\n  border-bottom-right-radius: 0px;\n  border-top-right-radius: 0px;\n}\n.input-group :last-child {\n  border-bottom-left-radius: 0px;\n  border-top-left-radius: 0px;\n}\n.addon {\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n.dropdown-toggle::after {\n  margin-left: 0.255em;\n  vertical-align: 0.255em;\n  content: \"\";\n  border-top: 0.3em solid;\n  border-right: 0.3em solid transparent;\n  border-bottom: 0;\n  border-left: 0.3em solid transparent;\n}\n.btn {\n  position: relative;\n  overflow: hidden;\n}\n.btn-group {\n  position: relative;\n  display: inline-flex;\n  vertical-align: middle;\n}\n.btn-group > .btn-group:not(:last-child) > button,\n.btn-group > button:not(:last-child):not(.dropdown) {\n  border-top-right-radius: 0;\n  border-bottom-right-radius: 0;\n}\n.btn-group > .btn-group:not(:first-child) > button,\n.btn-group > button:nth-child(n+3),\n.btn-group > :not(.btn-check) + button {\n  border-top-left-radius: 0;\n  border-bottom-left-radius: 0;\n}\nbutton {\n  display: inline-block;\n  font-weight: 400;\n  line-height: 1.5;\n  color: #212529;\n  text-align: center;\n  text-decoration: none;\n  vertical-align: middle;\n  cursor: pointer;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  user-select: none;\n  background-color: transparent;\n  border: 1px solid transparent;\n  border-top-color: transparent;\n  border-right-color: transparent;\n  border-bottom-color: transparent;\n  border-left-color: transparent;\n  padding: 0.375rem 0.75rem;\n  font-size: 1rem;\n  border-radius: 0.25rem;\n  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;\n  color: #fff;\n  background-color: var(--background, var(--primary));\n  border-color: #0a58ca;\n}\n\n";
 
-
-var $9066b25d33a19f2a$exports = {};
-$9066b25d33a19f2a$exports = "@keyframes ripple {\n  to {\n    transform: scale(4);\n    opacity: 0;\n  }\n}\n\n";
-
-
-class $2eafb92596faae42$export$df83e21cb27a0989 {
-    constructor(element){
-        this.element = element;
-        this.removeRipples = (el)=>{
-            el.removeEventListener('click', this.createRipple.bind(this));
-        };
-        element.addEventListener('click', this.createRipple.bind(this));
-        let root = element.getRootNode();
-        const style = document.createElement("style");
-        style.textContent = (/*@__PURE__*/$parcel$interopDefault($9066b25d33a19f2a$exports));
-        root.prepend(style);
-    }
-    createRipple(event) {
-        const button = this.element;
-        const circle = document.createElement("span");
-        const diameter = Math.max(button.clientWidth, button.clientHeight);
-        const radius = diameter / 2;
-        circle.setAttribute('part', 'ripple');
-        circle.style.width = circle.style.height = `${diameter}px`;
-        circle.style.left = `${event.clientX - button.offsetLeft - radius}px`;
-        circle.style.top = `${event.clientY - button.offsetTop - radius}px`;
-        circle.classList.add("ripple");
-        const ripple = button.getElementsByClassName("ripple")[0];
-        if (ripple) ripple.remove();
-        button.appendChild(circle);
-    }
-}
 
 
 
