@@ -68439,6 +68439,33 @@ let $40ced1b582104c2c$export$b257658fe271ed4e = _class1 = _dec3((_class1 = (_cla
 
 
 
+let $415d830675355089$export$91192cbf59ffa761;
+(function($415d830675355089$export$91192cbf59ffa761) {
+    $415d830675355089$export$91192cbf59ffa761.traverseForward = (index, array)=>{
+        let n = index + 1;
+        // Check we can move forwards
+        if (n < array.length) {
+            let tmp = array[n];
+            array[n] = array[index];
+            array[index] = tmp;
+            return n;
+        }
+    };
+    $415d830675355089$export$91192cbf59ffa761.traverseBackward = (index, array)=>{
+        let n = index - 1;
+        // Check we can move forwards
+        if (n >= 0) {
+            let tmp = array[n];
+            array[n] = array[index];
+            array[index] = tmp;
+            return n;
+        }
+    };
+})($415d830675355089$export$91192cbf59ffa761 || ($415d830675355089$export$91192cbf59ffa761 = {
+}));
+
+
+
 
 
 class $dd2a30aaadcaa61e$var$DataDirective extends $b51c4a33c90902d9$export$befdefbdce210f91 {
@@ -68457,55 +68484,103 @@ const $dd2a30aaadcaa61e$export$4051a07651545597 = $b51c4a33c90902d9$export$99b43
 
 
 
-function $6cdbd606b4007bee$export$21378d2031d78ad3(tree, obj, index, id = null) {
-    return $31a9a171bf15485f$export$c0bb0b647f701bb5`${Object.keys(obj).flatMap((key, i)=>{
+function $6cdbd606b4007bee$export$21378d2031d78ad3(tree, obj, index, parent = null) {
+    let result;
+    if (tree.labelKey in obj && tree.itemsKey in obj) {
+        let items = obj[tree.itemsKey];
+        result = $31a9a171bf15485f$export$c0bb0b647f701bb5`<span @click="${tree.itemClicked}" data-index="${index}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', obj)} ${$dd2a30aaadcaa61e$export$4051a07651545597('parent', parent)}>${obj[tree.labelKey]}</span>${$3203fcf2bd005a22$export$2f8b32581539ba02(tree, items, 0)}`;
+    } else if (tree.labelKey in obj) result = $31a9a171bf15485f$export$c0bb0b647f701bb5`<span @click="${tree.itemClicked}" data-index="${index}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', obj)} ${$dd2a30aaadcaa61e$export$4051a07651545597('parent', parent)}>${obj[tree.labelKey]}</span>`;
+    else result = $31a9a171bf15485f$export$c0bb0b647f701bb5`<ul>${Object.keys(obj).flatMap((key, i)=>{
         let itm = obj[key];
         console.log(key);
-        if (Array.isArray(itm)) return $3203fcf2bd005a22$export$2f8b32581539ba02(tree, itm, i, key);
+        if (Array.isArray(itm)) return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li><span @click="${tree.itemClicked}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', obj)}>${key}</span>${$3203fcf2bd005a22$export$2f8b32581539ba02(tree, itm, i)}</li>`;
         else if (typeof itm === 'object') // TODO: Spaceify and lookup labels for key
-        return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li><span @click="${tree.itemClicked}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', itm)} class="collapsed">${key}</span>${$3203fcf2bd005a22$export$2f8b32581539ba02(tree, itm, i, key)}</li>`;
+        return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li><span @click="${tree.itemClicked}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', itm)} class="collapsed">${key}</span>${$3203fcf2bd005a22$export$2f8b32581539ba02(tree, itm, i)}</li>`;
         else return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li>${itm}</li>`;
-    })}`;
-}
-
-
-function $3203fcf2bd005a22$export$2f8b32581539ba02(tree, obj, index, id = null) {
-    let result;
-    if (Array.isArray(obj)) {
-        console.log(id);
-        result = $31a9a171bf15485f$export$c0bb0b647f701bb5`<li}><span @click="${tree.itemClicked}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', obj)} class="collapsed">${id}</span><ul>${obj.flatMap((itm, i)=>{
-            if (Array.isArray(itm) || typeof itm === 'object') return $31a9a171bf15485f$export$c0bb0b647f701bb5`${$3203fcf2bd005a22$export$2f8b32581539ba02(tree, itm, i, id)}`;
-            else return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li>${itm}</li>`;
-        })}</ul></li>`;
-    } else if (typeof obj === 'object') // TODO: Spaceify and lookup labels for id
-    result = $6cdbd606b4007bee$export$21378d2031d78ad3(tree, obj, index, id);
+    })}</ul>`;
     return result;
 }
 
 
-var _class, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3, _descriptor4, _dec4, _descriptor5, _dec5, _descriptor6, _dec6;
+function $3203fcf2bd005a22$export$2f8b32581539ba02(tree, obj, index, parent = null) {
+    let result;
+    if (Array.isArray(obj)) result = $31a9a171bf15485f$export$c0bb0b647f701bb5`<ul>${obj.flatMap((itm, i)=>{
+        if (Array.isArray(itm) || typeof itm === 'object') return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li>${$3203fcf2bd005a22$export$2f8b32581539ba02(tree, itm, i, obj)}</li>`;
+        else return $31a9a171bf15485f$export$c0bb0b647f701bb5`<li><span @click="${tree.itemClicked}" data-index="${i}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', itm)} ${$dd2a30aaadcaa61e$export$4051a07651545597('parent', obj)}>${itm}</span></li>`;
+    })}</ul>`;
+    else if (typeof obj === 'object') // TODO: Spaceify and lookup labels for id
+    result = $31a9a171bf15485f$export$c0bb0b647f701bb5`${$6cdbd606b4007bee$export$21378d2031d78ad3(tree, obj, index, parent)}`;
+    return result;
+}
+
+
+var $93daa4f2a5286ae7$exports = {};
+$93daa4f2a5286ae7$exports = ".selected {\n  background-color: var(--active, #e7f1ff);\n}\n\n";
+
+
+var _class;
+var _class1, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3, _descriptor4, _dec4, _descriptor5, _dec5, _descriptor6, _dec6;
 var _dec7 = $d3ab95659f54da43$export$da64fc29f17f9d0e("juel-tree");
-let $cefc40bbcfb755de$export$4671f7791d394248 = _class = _dec7((_class = class $cefc40bbcfb755de$export$4671f7791d394248 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
+let $cefc40bbcfb755de$export$4671f7791d394248 = _class1 = _dec7((_class1 = (_class = class $cefc40bbcfb755de$export$4671f7791d394248 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
     constructor(){
         super();
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "data", _descriptor, this);
-        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "LabelKey", _descriptor1, this);
+        $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "labelKey", _descriptor1, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "itemsKey", _descriptor2, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "controls", _descriptor3, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "controlsInline", _descriptor4, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "controlUp", _descriptor5, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "controlDown", _descriptor6, this);
-        this.LabelKey = "name";
+        this.labelKey = "name";
+        this.itemsKey = "items";
+        this.controlUp = "Up";
+        this.controlDown = "Down";
     }
     itemClicked(e) {
-        console.log(e);
-        let el = e.target;
-        if (el) console.log($(el).data('data'));
+        let el = $(e.target);
+        if (el) {
+            if (this.selectedElement) this.selectedElement.classList.remove('selected');
+            this.selectedElement = el[0];
+            this.selectedElement.classList.add('selected');
+            this.selectedNode = {
+                index: el.data('index'),
+                data: el.data('data'),
+                parent: el.data('parent')
+            };
+        }
+    }
+    moveNodeUp() {
+        if (this.selectedNode && this.selectedNode.parent) {
+            let newIndex = $415d830675355089$export$91192cbf59ffa761.traverseBackward(this.selectedNode.index, this.selectedNode.parent);
+            if (newIndex >= 0) {
+                let elements = $(this.selectedElement).parent().siblings().addBack();
+                // Move the selected class to the new node element
+                elements[this.selectedNode.index].firstElementChild.classList.remove("selected");
+                elements[newIndex].firstElementChild.classList.add("selected");
+                this.selectedNode.index = newIndex;
+                this.requestUpdate();
+            }
+        }
+    }
+    moveNodeDown() {
+        if (this.selectedNode && this.selectedNode.parent) {
+            let newIndex = $415d830675355089$export$91192cbf59ffa761.traverseForward(this.selectedNode.index, this.selectedNode.parent);
+            if (newIndex >= 0) {
+                let elements = $(this.selectedElement).parent().siblings().addBack();
+                // Move the selected class to the new node element
+                elements[this.selectedNode.index].firstElementChild.classList.remove("selected");
+                elements[newIndex].firstElementChild.classList.add("selected");
+                this.selectedNode.index = newIndex;
+                this.requestUpdate();
+            }
+        }
     }
     render() {
-        if (this.data) return $31a9a171bf15485f$export$c0bb0b647f701bb5`<ul>${$3203fcf2bd005a22$export$2f8b32581539ba02(this, this.data, 0)}</ul>`;
+        if (this.data) return $31a9a171bf15485f$export$c0bb0b647f701bb5`${$96a7062113380d84$export$a55877ca9db47377(this.controls, ()=>$31a9a171bf15485f$export$c0bb0b647f701bb5`<div class="controls"><juel-button label="${this.controlUp}" @button-clicked="${this.moveNodeUp}"></juel-button><juel-button label="${this.controlDown}" @button-clicked="${this.moveNodeDown}"></juel-button></div>`
+        )}
+            ${$3203fcf2bd005a22$export$2f8b32581539ba02(this, this.data, 0)}`;
     }
-}, _dec = $d7a3a22213f97dd2$export$d541bacb2bda4494({
+}, _class.styles = $ca57216a6d082b28$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($93daa4f2a5286ae7$exports))), _class), _dec = $d7a3a22213f97dd2$export$d541bacb2bda4494({
     type: Object
 }), _dec1 = $d7a3a22213f97dd2$export$d541bacb2bda4494({
     attribute: "label-key"
@@ -68520,56 +68595,56 @@ let $cefc40bbcfb755de$export$4671f7791d394248 = _class = _dec7((_class = class $
     attribute: "control-up"
 }), _dec6 = $d7a3a22213f97dd2$export$d541bacb2bda4494({
     attribute: "control-down"
-}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "data", [
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "data", [
     _dec
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "LabelKey", [
+}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "labelKey", [
     _dec1
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "itemsKey", [
+}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "itemsKey", [
     _dec2
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controls", [
+}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controls", [
     _dec3
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor4 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controlsInline", [
+}), _descriptor4 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controlsInline", [
     _dec4
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor5 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controlUp", [
+}), _descriptor5 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controlUp", [
     _dec5
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor6 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controlDown", [
+}), _descriptor6 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controlDown", [
     _dec6
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _class)) || _class;
+}), _class1)) || _class1;
 
 
 
@@ -68702,9 +68777,15 @@ let $cefc40bbcfb755de$export$4671f7791d394248 = _class = _dec7((_class = class $
 
 var $4lLRM = parcelRequire("4lLRM");
 
-var _class, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3, _descriptor4, _dec4;
+
+var $ced424b5128a85b8$exports = {};
+$ced424b5128a85b8$exports = "tr.selected {\n  background-color: var(--active, #e7f1ff);\n}\ntd.selected {\n  background-color: var(--highlight, #007bff);\n}\n\n";
+
+
+var _class;
+var _class1, _descriptor, _dec, _descriptor1, _dec1, _descriptor2, _dec2, _descriptor3, _dec3, _descriptor4, _dec4;
 var _dec5 = $d3ab95659f54da43$export$da64fc29f17f9d0e("juel-table");
-let $22ce50b7ffc4a8de$export$3d59122e1522f64 = _class = _dec5((_class = class $22ce50b7ffc4a8de$export$3d59122e1522f64 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
+let $22ce50b7ffc4a8de$export$3d59122e1522f64 = _class1 = _dec5((_class1 = (_class = class $22ce50b7ffc4a8de$export$3d59122e1522f64 extends $0ffb8fe3698c1a41$export$c6e5a5bea44a61ec {
     constructor(){
         super();
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "data", _descriptor, this);
@@ -68713,6 +68794,16 @@ let $22ce50b7ffc4a8de$export$3d59122e1522f64 = _class = _dec5((_class = class $2
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "controlUp", _descriptor3, this);
         $5f9ea06ebfa318f1$export$2e2bcd8739ae039(this, "controlDown", _descriptor4, this);
     }
+    rowSelected(e) {
+        if (this.selectedRow) this.selectedRow.classList.remove("selected");
+        this.selectedRow = e.currentTarget ?? e.target;
+        this.selectedRow.classList.add("selected");
+    }
+    cellSelected(e) {
+        if (this.selectedCell) this.selectedCell.classList.remove("selected");
+        this.selectedCell = e.target;
+        this.selectedCell.classList.add("selected");
+    }
     render() {
         if (this.data) {
             let keys = Object.keys(this.data[0]);
@@ -68720,13 +68811,13 @@ let $22ce50b7ffc4a8de$export$3d59122e1522f64 = _class = _dec5((_class = class $2
             <tr>${keys.map((x)=>$31a9a171bf15485f$export$c0bb0b647f701bb5`<th>${$4lLRM.upperFirst(x)}</th>`
             )}</tr>
             ${$4d6a18a1a39a02eb$export$76d90c956114f2c2(this.data, (item, index)=>$31a9a171bf15485f$export$c0bb0b647f701bb5`
-            <tr data-index="${index}">${keys.map((x)=>$31a9a171bf15485f$export$c0bb0b647f701bb5`<td>${item[x]}</td>`
+            <tr @click="${this.rowSelected}" data-index="${index}">${keys.map((x)=>$31a9a171bf15485f$export$c0bb0b647f701bb5`<td @click="${this.cellSelected}" ${$dd2a30aaadcaa61e$export$4051a07651545597('data', item[x])}>${item[x]}</td>`
                 )}</tr>
             `
             )}</table>`;
         }
     }
-}, _dec = $d7a3a22213f97dd2$export$d541bacb2bda4494({
+}, _class.styles = $ca57216a6d082b28$export$8d80f9cac07cdb3((/*@__PURE__*/$parcel$interopDefault($ced424b5128a85b8$exports))), _class), _dec = $d7a3a22213f97dd2$export$d541bacb2bda4494({
     type: Array
 }), _dec1 = $d7a3a22213f97dd2$export$d541bacb2bda4494({
     type: Boolean
@@ -68737,42 +68828,42 @@ let $22ce50b7ffc4a8de$export$3d59122e1522f64 = _class = _dec5((_class = class $2
     attribute: "control-up"
 }), _dec4 = $d7a3a22213f97dd2$export$d541bacb2bda4494({
     attribute: "control-down"
-}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "data", [
+}), _descriptor = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "data", [
     _dec
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controls", [
+}), _descriptor1 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controls", [
     _dec1
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controlsInline", [
+}), _descriptor2 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controlsInline", [
     _dec2
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controlUp", [
+}), _descriptor3 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controlUp", [
     _dec3
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _descriptor4 = $5024de4088f028a6$export$2e2bcd8739ae039(_class.prototype, "controlDown", [
+}), _descriptor4 = $5024de4088f028a6$export$2e2bcd8739ae039(_class1.prototype, "controlDown", [
     _dec4
 ], {
     configurable: true,
     enumerable: true,
     writable: true,
     initializer: void 0
-}), _class)) || _class;
+}), _class1)) || _class1;
 
 
 
